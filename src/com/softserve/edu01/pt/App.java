@@ -18,6 +18,7 @@ public class App {
         System.out.println("1- First task");
         System.out.println("2- Second task");
         System.out.println("3- Third task");
+        System.out.println("4- Fourth task");
 
         System.out.println("Your choice : ");
         choice = Integer.parseInt(scanner.nextLine());
@@ -29,6 +30,7 @@ public class App {
             case 1 -> task1();
             case 2 -> task2();
             case 3 -> task3();
+            case 4 -> task4();
             default -> System.out.println("Unknown number!");
         }
 
@@ -101,6 +103,17 @@ public class App {
         System.out.println("a - b = " + (a-b));
         System.out.println("a * b = " + (a*b));
         System.out.println("a / b = " + ((double)a/b));
+
+
+    }
+
+    public static void task4() {
+
+        //This function asks user how is he and outputs his answer
+        String answer;
+        System.out.print("How are you?\n - I'm ");
+        answer = scanner.nextLine();
+        System.out.println("You are "+ answer + " .");
 
 
     }
