@@ -13,7 +13,7 @@ public class App {
 
         //Some user friendly interface
 
-        System.out.println("Menu");
+        System.out.println("Practical tasks menu");
         System.out.println("0- Exit");
         System.out.println("1- First task");
         System.out.println("2- Second task");
