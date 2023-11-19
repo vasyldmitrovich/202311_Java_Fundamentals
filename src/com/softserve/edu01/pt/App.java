@@ -16,6 +16,7 @@ public class App {
         System.out.println("Practical tasks menu");
         System.out.println("0- Exit");
         System.out.println("1- First task");
+
         System.out.println("2- Second task");
         System.out.println("3- Third task");
         System.out.println("4- Fourth task");
