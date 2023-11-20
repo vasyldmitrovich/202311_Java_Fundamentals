@@ -29,7 +29,7 @@ public class App {
         int answer2 = scanner.nextInt();
         System.out.println("Input third number: ");
         int answer3 = scanner.nextInt();
-        double average = (answer1 + answer2 + answer3) / 3;
+        double average = (answer1 + answer2 + answer3) / 3.0;
         System.out.println("average number" + average);
 
         // Task 3...
