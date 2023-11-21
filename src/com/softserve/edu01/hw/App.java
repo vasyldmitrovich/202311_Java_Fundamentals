@@ -18,7 +18,6 @@ public class App {
         System.out.print("Circle = " + Math.pow((3.14 * inputInt), 2));
 
         // Task 2
-        var scanner = new Scanner(System.in);
         System.out.print("What is your name? ");
         String intName = scanner.nextLine();
         System.out.println("Hi, " + intName + "!");
@@ -27,7 +26,6 @@ public class App {
         System.out.print(intCity + " is a beautiful city!");
 
         // Task 3
-        var scanner = new Scanner(System.in);
         System.out.print("Enter the cost per minute 1: ");
         int inputCost1 = scanner.nextInt();
         System.out.print("Enter the cost per minute 2: ");
