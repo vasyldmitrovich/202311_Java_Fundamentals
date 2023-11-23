@@ -26,7 +26,12 @@ public class App {
     }
 
     public static void task2 (){
-
+        System.out.println("Task 2");
+        System.out.println("What is your name?");
+        String name = scanner.nextLine();
+        System.out.println("Where do you live?");
+        String address = scanner.nextLine();
+        System.out.println("Your name is " + name + ". You live in " + address + ".");
     }
 
     public static void task3(){
