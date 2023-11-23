@@ -20,7 +20,7 @@ public class Main {
             int num3 = sc.nextInt();
             nc.setNum3(num3);
 
-            int smallestNum = nc.findLeastNumber(nc.getNum1(), nc.getNum2(), nc.getNum3());
+            int smallestNum = NumberComparison.findLeastNumber(nc.getNum1(), nc.getNum2(), nc.getNum3());
 
             System.out.println(smallestNum + " is the smallest of these three numbers.");
 
