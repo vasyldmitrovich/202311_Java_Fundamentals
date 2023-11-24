@@ -1,18 +1,23 @@
 package com.softserve.edu02.pt;
 
-import java.util.Scanner;
+
 
 public class Employee {
 
-    private String name;
-    private double rate;
-    private double hours;
+    private final String name;
+    private final double rate;
+    private final double hours;
 
     private static double totalSum = 0;
 
-    public Employee() {
-
-    }
+//    public Employee() {
+//        //default constructor
+//
+//        this.name = null;
+//        this.rate = 0;
+//        this.hours = 0;
+//
+//    }
     public Employee(String name,double rate,double hours) {
 
         this.name = name;
@@ -22,29 +27,6 @@ public class Employee {
         totalSum += getSalary();
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public double getRate() {
-        return rate;
-    }
-
-    public double getHours() {
-        return hours;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setRate(double rate) {
-        this.rate = rate;
-    }
-
-    public void setHours(double hours) {
-        this.hours = hours;
-    }
 
     @Override
     public String toString() {
