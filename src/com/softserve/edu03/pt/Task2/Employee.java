@@ -18,13 +18,13 @@ public class Employee {
     }
 
     public Employee(String number) {
-        System.out.println("Enter the name of this employee " + number + ": ");
+        System.out.print("Enter the name of employee " + number + ": ");
+        name = SCANNER.nextLine();
     }
 
-    static double getSalary(Employee employee) {
+    static void getSalary(Employee employee) {
         double gehalt = employee.getRate() * employee.getHours();
         totalSum += gehalt;
-        return gehalt;
     }
 
     static double getBonuses() {
@@ -40,20 +40,20 @@ public class Employee {
                 '}';
     }
 
+    // the name of the employee is obtained through the constructor
+    // the below method deals with the hourly rate and the worked hours
     public static void askForParameters(Employee employee) {
-        System.out.print("Enter the name of this employee: ");
-        String name = SCANNER.nextLine();
-        employee.setName(name);
-
-        System.out.print("Enter the hourly remuneration rate for employee " + name + ":");
+        System.out.print("Enter the hourly remuneration rate for employee " + employee.name + ": ");
         double rate = SCANNER.nextInt();
         SCANNER.nextLine();
         employee.setRate(rate);
 
-        System.out.print("Enter the number of hours worked by employee " + name + ":");
+        System.out.print("Enter the number of hours worked by employee " + employee.name + ": ");
         double hours = SCANNER.nextInt();
         SCANNER.nextLine();
         employee.setHours(hours);
+
+        System.out.println(); // just an empty line to please the eye
     }
 
     public String getName() {
@@ -78,6 +78,5 @@ public class Employee {
 
     public void setHours(double hours) {
         this.hours = hours;
-        //totalSum = totalSum + ( rate * hours );
     }
 }

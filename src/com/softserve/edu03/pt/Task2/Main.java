@@ -11,13 +11,13 @@ public class Main {
         Locale.setDefault(Locale.ROOT);
 
         // Creating our three employees
-        Employee employee1 = new Employee();
+        Employee employee1 = new Employee("one");
         Employee.askForParameters(employee1);
 
-        Employee employee2 = new Employee();
+        Employee employee2 = new Employee("two");
         Employee.askForParameters(employee2);
 
-        Employee employee3 = new Employee();
+        Employee employee3 = new Employee("three");
         Employee.askForParameters(employee3);
 
         //Calculating the total amount of salaries
@@ -33,6 +33,7 @@ public class Main {
 
         System.out.printf("\nTotal amount of salaries for all three employees is %.2f dollars.\n", Employee.totalSum);
 
-        System.out.printf("Our three employees are entitled to the following amount of bonuses: %.2f.", Employee.getBonuses());
+        System.out.printf("Our three employees are entitled to the following combined amount of bonuses: %.2f.",
+                Employee.getBonuses());
     }
 }
