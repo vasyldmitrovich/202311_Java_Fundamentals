@@ -25,8 +25,8 @@ public class App {
         System.out.println("Enter the second number: ");
         double a2 = Double.parseDouble(scanner.nextLine());
         System.out.println(a1);
-        System.out.println("The sum of " + a1 + " and " + a2 + " is "+ App.getTotal(a1,a2));
-        System.out.println("The average of " + a1 + " and " + a2 + " is "+ App.getAverage(a1,a2));
+        System.out.println("The sum of " + a1 + " and " + a2 + " is " + App.getTotal(a1, a2));
+        System.out.println("The average of " + a1 + " and " + a2 + " is " + App.getAverage(a1, a2));
 
         System.out.println("Enter the number as a string: ");
         String a = scanner.nextLine();
@@ -39,7 +39,7 @@ public class App {
     }
 
     public static double getAverage(double a1, double a2) {
-        return (a1 + a2)/2;
+        return (a1 + a2) / 2;
     }
 
     public static double getNumber(String a) {
@@ -47,11 +47,9 @@ public class App {
     }
 
 
-
-
     public static void task2() {
 
-        for (int i=0; i<=2; i++) {
+        for (int i = 0; i <= 2; i++) {
             System.out.println("Enter the name of employee: ");
             String name = scanner.nextLine();
             System.out.println("Enter the rate of employee: ");

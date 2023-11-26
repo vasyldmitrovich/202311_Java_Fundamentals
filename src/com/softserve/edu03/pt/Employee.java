@@ -56,14 +56,14 @@ public class Employee {
                 '}';
     }
 
-    public double getSalary(){
+    public double getSalary() {
         double salary = this.hours * this.rate;
         totalSum += salary;
         return salary;
     }
 
-    public double getBonuses(double sal){
-        double bonus = sal*0.10;
+    public double getBonuses(double sal) {
+        double bonus = sal * 0.10;
         totalSum += bonus;
         return bonus;
     }

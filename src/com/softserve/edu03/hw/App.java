@@ -1,4 +1,5 @@
 package com.softserve.edu03.hw;
+
 import java.util.Scanner;
 
 public class App {
@@ -15,10 +16,10 @@ public class App {
         App.task2();
 
         // Task 3...
-        // App.task3();
+        App.task3();
     }
 
-    public static void task1 () {
+    public static void task1() {
         System.out.println("Enter the Side 1: ");
         double s1 = Double.parseDouble(scanner.nextLine());
         System.out.println("Enter the Side 2: ");
@@ -30,13 +31,12 @@ public class App {
 
     }
 
-    public static double areaTriangle(double s1, double s2, double s3){
-           double p = (s1 + s2 + s3)/2;
-           double area = Math.pow(p*(p-s1)*(p-s2)*(p-s3), 1.0/2.0);
-           return area;
+    public static double areaTriangle(double s1, double s2, double s3) {
+        double p = (s1 + s2 + s3) / 2;
+        return Math.pow(p * (p - s1) * (p - s2) * (p - s3), 1.0 / 2.0);
     }
 
-    public static void task2 () {
+    public static void task2() {
 
         System.out.println("Enter the first number: ");
         int a1 = Integer.parseInt(scanner.nextLine());
@@ -53,7 +53,27 @@ public class App {
         return Math.min(firstmin, s3);
     }
 
-    public static void task3 () {
+    public static void task3() {
+
+        Person person1 = new Person();
+        person1.input();
+        person1.output();
+
+        Person person2 = new Person();
+        person2.input();
+        person2.output();
+
+        Person person3 = new Person();
+        person3.input();
+        person3.output();
+
+        Person person4 = new Person();
+        person4.input();
+        person4.output();
+
+        Person person5 = new Person();
+        person5.input();
+        person5.output();
 
     }
 }
