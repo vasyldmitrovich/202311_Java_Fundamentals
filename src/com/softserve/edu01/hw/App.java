@@ -10,7 +10,6 @@ public class App {
         // Homeworks
 
         // Task 1
-        App.task1();
         var scanner = new Scanner(System.in);
         System.out.print("Enter the radius: ");
         int inputInt = scanner.nextInt();

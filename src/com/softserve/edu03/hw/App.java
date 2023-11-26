@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
+
+        //Task 1
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the length of the first side: ");
         double side1 = scanner.nextDouble();
@@ -22,4 +24,5 @@ public class App {
         double s = (a + b + c) / 2;
         return Math.sqrt(s * (s - a) * (s - b) * (s - c));
     }
+
 }
