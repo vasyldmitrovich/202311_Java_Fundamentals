@@ -1,7 +1,5 @@
 package com.softserve.edu03.pt;
 
-
-
 public class Employee {
 
     private final String name;
