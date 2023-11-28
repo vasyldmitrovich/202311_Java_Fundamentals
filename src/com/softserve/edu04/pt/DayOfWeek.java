@@ -36,19 +36,19 @@ public class DayOfWeek {
 
             DaysOfWeek day;
 
-             day = switch (choice){
+            day = switch (choice){
 
-                 case 1 -> DaysOfWeek.MONDAY;
-                 case 2 -> DaysOfWeek.TUESDAY;
-                 case 3 -> DaysOfWeek.WEDNESDAY;
-                 case 4 -> DaysOfWeek.THURSDAY;
-                 case 5-> DaysOfWeek.FRIDAY;
-                 case 6 -> DaysOfWeek.SATURDAY;
-                 case 7 -> DaysOfWeek.SUNDAY;
-                 default -> throw new IllegalStateException("Unexpected value: " + choice);
-             };
-          return "Day in english : " + day.getNameInEnglish()
-                  + "\nDay in bulgarian : " + day.getNameInBulgarian();
+                case 1 -> DaysOfWeek.MONDAY;
+                case 2 -> DaysOfWeek.TUESDAY;
+                case 3 -> DaysOfWeek.WEDNESDAY;
+                case 4 -> DaysOfWeek.THURSDAY;
+                case 5 -> DaysOfWeek.FRIDAY;
+                case 6 -> DaysOfWeek.SATURDAY;
+                case 7 -> DaysOfWeek.SUNDAY;
+                default -> throw new IllegalStateException("Unexpected value: " + choice);
+            };
+            return "Day in english : " + day.getNameInEnglish()
+                    + "\nDay in bulgarian : " + day.getNameInBulgarian();
         }
 
 
