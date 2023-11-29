@@ -35,8 +35,7 @@ public class Task4 {
         } else if (
             ( pd3.getPrice() > pd4.getPrice() ) ) {
             return pd3;
-        }
-        return pd4;
+        } else { return pd4; }
     }
 
     // method determines the product with the largest quantity
@@ -52,8 +51,7 @@ public class Task4 {
         } else if (
             ( pd3.getQuantity() > pd4.getQuantity() ) ) {
             return pd3;
-        }
-        return pd4;
+        } else { return pd4; }
     }
 
     public static class Product {
