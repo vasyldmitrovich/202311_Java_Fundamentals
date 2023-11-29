@@ -11,15 +11,15 @@ public class Faculty {
         SUMMER("Vacation period"),
         AUTUMN("First semester");
 
-        private final String semesterType;
 
-        Season(String semesterType) {
+        private final String seasonType;
 
-            this.semesterType = semesterType;
+        Season(String seasonType) {
+            this.seasonType = seasonType;
         }
 
-        public String getSemesterType() {
-            return semesterType;
+        public String getSeasonType() {
+            return seasonType;
         }
 
         public static String getSeasonType (String choice){
@@ -32,7 +32,7 @@ public class Faculty {
                 case "AUTUMN" -> Season.AUTUMN;
                 default -> throw new IllegalStateException("Unexpected value: " + choice);
             };
-            return currentSeason.getSemesterType();
+            return currentSeason.getSeasonType();
         }
     }
 
