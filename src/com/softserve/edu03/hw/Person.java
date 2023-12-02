@@ -1,10 +1,13 @@
 package com.softserve.edu03.hw;
 
 import java.time.LocalDateTime;
+import java.util.Scanner;
 
-import static com.softserve.edu03.hw.App.scanner;
+//Where is App.java class and in this class should be main method
+
 
 public class Person {
+    static Scanner scanner = new Scanner(System.in);
     String firstName;
     String lastName;
     int birthYear;

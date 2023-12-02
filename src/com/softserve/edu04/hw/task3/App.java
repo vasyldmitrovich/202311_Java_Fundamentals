@@ -2,7 +2,7 @@ package com.softserve.edu04.hw.task3;
 
 import java.util.Scanner;
 
-enum HTTPError{
+enum HTTPError{//Move to file like HTTPError.java. Enum should not be inner
     ERROR401(401), ERROR402(402), ERROR400(400);
     private final int number;
 

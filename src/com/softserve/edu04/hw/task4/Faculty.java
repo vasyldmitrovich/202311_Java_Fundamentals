@@ -1,6 +1,6 @@
 package com.softserve.edu04.hw.task4;
 
-enum Season{
+enum Season{//Move from this class to file Season.java
     WINTER("Winter exams"), SPRING("Second semester"), SUMMER("Vacation period"), AUTUMN("First semester");
     final String engName;
 
