@@ -14,7 +14,5 @@ public class Main {
 
         Employee.certainDepartment(employees);
         Employee.sortInDescendingOrder(employees);
-
-
     }
 }
