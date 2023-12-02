@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class Dog {
-    public enum Breed{
+    public enum Breed{//Move to file Breed.java
         SPITZ,SAMOYED,BEAGLE,BULLDOG,AKITA,DALMATIAN
 
     }
@@ -38,7 +38,7 @@ public class Dog {
         return Objects.equals(name, dog.name);
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Move this method to class like App.java
 
         Dog dog1 = new Dog("Bob",Breed.SAMOYED, 12);
         Dog dog2 = new Dog("Joe",Breed.SPITZ, 15);

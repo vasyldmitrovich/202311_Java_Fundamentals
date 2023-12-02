@@ -48,7 +48,7 @@ public class Employee {
     }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Move to class like App.java, write main method not in entity class, write in class like App.java
 
         Employee employee1 = new Employee("Alex", 12, 23);
         Employee employee2 = new Employee("Nikolay", 34, 33);

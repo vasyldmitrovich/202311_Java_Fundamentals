@@ -2,7 +2,7 @@ package com.softserve.edu04.hw.Task1;
 
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Good
 
         Numbers num1 = new Numbers(-5.1,5.1,0);
         Numbers num2 = new Numbers(-6,9,6);

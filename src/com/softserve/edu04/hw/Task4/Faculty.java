@@ -4,7 +4,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Faculty {
-    public enum Season {
+    public enum Season {//Season do not write inner. Create file Season.java and move this code there
 
         WINTER("Exams period"),
         SPRING("Second semester"),

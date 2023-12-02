@@ -29,7 +29,7 @@ public class Person {
     }
 
     public Person(String firstName, String lastName, int birthYear) {
-
+        //Good
         this.id = nextId++;//authomatical id for readable printing person's info
         this.firstName = firstName;
         this.lastName = lastName;
@@ -115,7 +115,7 @@ public class Person {
     }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Move this main method to class like App.java, this method should not be here
 
         //Add info
         Person person1 = new Person("Maria","Brin",1978);
