@@ -8,6 +8,6 @@ public class Main {
 
         System.out.println("Input error number to get definition (from 400 to 410)");
         int input = scanner.nextInt();
-        System.out.printf("Error %d - %s",input,HTTPError.checkHTTPError(input));
+        System.out.printf("Error %d - %s",input,HTTPError.checkHTTPError(input));//Ok
     }
 }

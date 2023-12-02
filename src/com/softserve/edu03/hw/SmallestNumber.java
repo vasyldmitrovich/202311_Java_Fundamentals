@@ -35,6 +35,6 @@ public class SmallestNumber {
         System.out.println("Input the third number: ");
         int c = scanner.nextInt();
 
-        System.out.printf("The smallest number is %d",smallestNumber(a,b,c));
+        System.out.printf("The smallest number is %d",smallestNumber(a,b,c));//Good
     }
 }
