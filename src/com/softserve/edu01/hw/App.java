@@ -16,7 +16,7 @@ public class App {
         task3();
     }
 
-    public static void task1(){
+    public static void task1() {
         System.out.println("Task 1");
         System.out.print("Enter radius: ");
         double radius = Double.parseDouble(scanner.nextLine());
@@ -24,7 +24,7 @@ public class App {
         System.out.println("Area is " + (Math.PI * Math.pow(radius, 2)));
     }
 
-    public static void task2 (){
+    public static void task2() {
         System.out.println("Task 2");
         System.out.println("What is your name?");
         String name = scanner.nextLine();
@@ -33,7 +33,7 @@ public class App {
         System.out.println("Your name is " + name + ". You live in " + address + ".");
     }
 
-    public static void task3(){
+    public static void task3() {
         System.out.println("Task 3");
         System.out.print("Enter first call cost: ");
         double c1 = Double.parseDouble(scanner.nextLine());
