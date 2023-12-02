@@ -1,34 +1,14 @@
 package com.softserve.edu03.hw;
 
+import java.util.Scanner;
+
 public class App {
+    public static final Scanner SCANNER = new Scanner(System.in);
     public static void main(String[] args) {
-        homeTask1();
-        homeTask2();
-        homeTask3();
-        homeTask4();
+        System.out.println("Task 1");
+        HomeTask1.run();
+
+        System.out.println("\nTask2");
+        HomeTask2.run();
     }
-
-
-    public static void homeTask1() {
-
-
-    }
-
-    public static void homeTask2() {
-
-
-    }
-
-    public static void homeTask3() {
-
-
-    }
-
-    public static void homeTask4() {
-
-
-    }
-
-
-
 }
