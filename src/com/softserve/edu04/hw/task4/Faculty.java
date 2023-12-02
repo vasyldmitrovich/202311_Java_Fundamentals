@@ -1,21 +1,5 @@
 package com.softserve.edu04.hw.task4;
 
-enum Season{//Move from this class to file Season.java
-    WINTER("Winter exams"), SPRING("Second semester"), SUMMER("Vacation period"), AUTUMN("First semester");
-    final String engName;
-
-    Season(String engName) {
-        this.engName = engName;
-    }
-
-    @Override
-    public String toString() {
-        return "Season{" +
-                "engName='" + engName + '\'' +
-                '}';
-    }
-}
-
 public class Faculty {
     int numberOfStudents;
     Season season;

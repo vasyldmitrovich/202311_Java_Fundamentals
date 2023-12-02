@@ -1,9 +1,9 @@
 package com.softserve.edu03.pt;
 
 public class Employee {
-    String name;//Make all fields private
-    double rate;
-    int hours;
+    private String name;//Make all fields private
+    private double rate;
+    private int hours;
     static double totalSum;
 
     public Employee() {
