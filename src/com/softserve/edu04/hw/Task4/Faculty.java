@@ -4,37 +4,6 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Faculty {
-    public enum Season {//Season do not write inner. Create file Season.java and move this code there
-
-        WINTER("Exams period"),
-        SPRING("Second semester"),
-        SUMMER("Vacation period"),
-        AUTUMN("First semester");
-
-
-        private final String seasonType;
-
-        Season(String seasonType) {
-            this.seasonType = seasonType;
-        }
-
-        public String getSeasonType() {
-            return seasonType;
-        }
-
-        public static String getSeasonType (String choice){
-
-            Season currentSeason = switch (choice) {
-
-                case "WINTER" -> Season.WINTER;
-                case "SPRING" -> Season.SPRING;
-                case "SUMMER" -> Season.SUMMER;
-                case "AUTUMN" -> Season.AUTUMN;
-                default -> throw new IllegalStateException("Unexpected value: " + choice);
-            };
-            return currentSeason.getSeasonType();
-        }
-    }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
