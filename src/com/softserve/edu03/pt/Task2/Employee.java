@@ -1,4 +1,4 @@
-package com.softserve.edu03.pt;
+package com.softserve.edu03.pt.Task2;
 
 public class Employee {
 
@@ -47,20 +47,4 @@ public class Employee {
         return totalSum;
     }
 
-
-    public static void main(String[] args) {//Move to class like App.java, write main method not in entity class, write in class like App.java
-
-        Employee employee1 = new Employee("Alex", 12, 23);
-        Employee employee2 = new Employee("Nikolay", 34, 33);
-        Employee employee3 = new Employee("Stepan", 27, 41);
-
-        // Display information about each employee
-        System.out.println(employee1);
-        System.out.println(employee2);
-        System.out.println(employee3);
-
-        System.out.println("Total salary of all employees: " + getTotalSum());
-
-
-    }
 }
