@@ -51,7 +51,7 @@ public class HomeWork3 {
     }
 }
 
-enum HTTPError {
+enum HTTPError {//Write all classes and enum in separate files for this enum move this enum to HTTPError.java file
     BAD_REQUEST("Bad request"),
     UNAUTHORIZED("Unauthorized"),
     PAYMENT_REQUIRED("Payment required"),
