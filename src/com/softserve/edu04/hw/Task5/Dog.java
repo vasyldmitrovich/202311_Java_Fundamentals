@@ -1,13 +1,9 @@
 package com.softserve.edu04.hw.Task5;
 
-import java.util.ArrayList;
 import java.util.Objects;
 
 public class Dog {
-    public enum Breed{//Move to file Breed.java
-        SPITZ,SAMOYED,BEAGLE,BULLDOG,AKITA,DALMATIAN
 
-    }
     private final String name;
     private final Breed breed;
     private final double age;

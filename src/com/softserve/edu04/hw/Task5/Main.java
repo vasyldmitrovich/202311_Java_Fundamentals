@@ -5,9 +5,9 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
-        Dog dog1 = new Dog("Bob", Dog.Breed.SAMOYED, 12);
-        Dog dog2 = new Dog("Joe", Dog.Breed.SPITZ, 15);
-        Dog dog3 = new Dog("Joe", Dog.Breed.AKITA, 7);
+        Dog dog1 = new Dog("Bob", Breed.SAMOYED, 12);
+        Dog dog2 = new Dog("Joe", Breed.SPITZ, 15);
+        Dog dog3 = new Dog("Joe", Breed.AKITA, 7);
 
 
         double oldestDogAge = dog1.getAge();
