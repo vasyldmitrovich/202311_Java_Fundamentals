@@ -1,5 +1,7 @@
 package com.softserve.edu04.hw;
 
+import com.softserve.edu04.hw.HomeTask3.HomeTask3;
+
 import java.util.Scanner;
 
 public class App {
@@ -7,8 +9,11 @@ public class App {
     public static void main(String[] args) {
 //        System.out.println("Task 1");
 //        HomeTask1.run();
-        System.out.println("\nTask 2");
-        HomeTask2.run();
+//        System.out.println("\nTask 2");
+//        HomeTask2.run();
+        System.out.println("\nTask 3");
+        HomeTask3.run();
+
 
 
     }
