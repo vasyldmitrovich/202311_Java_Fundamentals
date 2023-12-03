@@ -1,6 +1,7 @@
 package com.softserve.edu05.pt.Task4;
 
 public class Main {
+
     public static void main(String[] args) {
         Employee employee1 = new Employee("Joe",1385,3000);
         Employee employee2 = new Employee("Mike",1251,2900);
