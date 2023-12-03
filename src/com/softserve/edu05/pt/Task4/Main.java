@@ -12,7 +12,6 @@ public class Main {
         Employee[] employees = new Employee[]{
                 employee1, employee2, employee3, employee4, employee5
         };
-
         Employee.certainDepartment(employees);
         Employee.sortInDescendingOrder(employees);
     }
