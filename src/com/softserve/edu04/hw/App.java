@@ -2,6 +2,7 @@ package com.softserve.edu04.hw;
 
 import com.softserve.edu04.hw.HomeTask3.HomeTask3;
 import com.softserve.edu04.hw.HomeTask4.HomeTask4;
+import com.softserve.edu04.hw.HomeTask5.HomeTask5;
 
 import java.util.Scanner;
 
@@ -16,7 +17,8 @@ public class App {
         HomeTask3.run();
         System.out.println("\nTask 4");
         HomeTask4.run();
-
+        System.out.println("\nTask 5");
+        HomeTask5.run();
 
 
     }
