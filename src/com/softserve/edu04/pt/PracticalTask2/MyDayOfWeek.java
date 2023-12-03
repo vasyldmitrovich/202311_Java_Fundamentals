@@ -1,4 +1,4 @@
-package com.softserve.edu04.pt.PraticalTask2;
+package com.softserve.edu04.pt.PracticalTask2;
 
 public enum MyDayOfWeek {
     SUNDAY("Неділя"),

@@ -1,4 +1,4 @@
-package com.softserve.edu04.pt.PraticalTask2;
+package com.softserve.edu04.pt.PracticalTask2;
 
 import static com.softserve.edu04.pt.App.SCANNER;
 

@@ -1,7 +1,8 @@
 package com.softserve.edu04.pt;
 
+import com.softserve.edu04.pt.PracticalTask2.PracticalTask2;
 import com.softserve.edu04.pt.PracticalTask3.PracticalTask3;
-import com.softserve.edu04.pt.PraticalTask2.PracticalTask2;
+import com.softserve.edu04.pt.PracticalTask4.PracticalTask4;
 
 import java.util.Scanner;
 
@@ -17,6 +18,8 @@ public class App {
         System.out.println("\nTask 3");
         PracticalTask3.run();
 
+        System.out.println("\nTask 4");
+        PracticalTask4.run();
     }
 
 
