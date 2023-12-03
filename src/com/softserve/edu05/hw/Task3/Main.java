@@ -24,5 +24,10 @@ public class Main {
         Car.showModelYear(cars);
         Car.sortByYearOfProduction(cars);
 
+        System.out.println("Cars sorted by year of production: ");
+        for (Car car : cars) {
+            System.out.println(car.toString());
+        }
+
     }
 }

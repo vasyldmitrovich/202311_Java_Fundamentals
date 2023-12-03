@@ -2,7 +2,7 @@ package com.softserve.edu05.hw.Task3;
 
 import java.util.Scanner;
 
-public class Car {
+public class    Car {
 
     private String type;
     private int yearOfProduction;
@@ -52,9 +52,8 @@ public class Car {
         }
     }
 
-    public static void sortByYearOfProduction (Car[] cars){
+    public static Car[] sortByYearOfProduction (Car[] cars){
 
-        System.out.println("Cars sorted by year of production: ");
         //Bubble sort
         for (int i = 0; i < cars.length - 1; i++) {
             for (int j = 0; j < cars.length - i - 1; j++) {
@@ -66,10 +65,8 @@ public class Car {
                 }
             }
         }
-        //output
-        for (Car car : cars) {
-            System.out.println(car.toString());
-        }
+
+        return cars;
     }
 
 
