@@ -13,8 +13,6 @@ public class PracticalTask2 {
         System.out.println(employee3);
         System.out.println("Total sum of salary: " + Employee.getTotalSum());
         System.out.println("Total sum of salary with bonuses: " + Employee.getTotalSumWithBonuses());
-
-
     }
 
 }

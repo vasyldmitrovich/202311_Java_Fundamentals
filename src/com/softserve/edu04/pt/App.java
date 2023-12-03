@@ -1,23 +1,14 @@
 package com.softserve.edu04.pt;
 
+import java.util.Scanner;
+
 public class App {
+    public static final Scanner SCANNER = new Scanner(System.in);
     public static void main(String[] args) {
+        System.out.println("Task 1");
+        PracticalTask1.run();
 
-    }
-
-    public static void practicalTask1() {
-
-    }
-
-    public static void practicalTask2() {
-
-    }
-
-    public static void practicalTask3() {
-
-    }
-
-    public static void practicalTask4() {
+        System.out.println("\n Task 2");
 
     }
 

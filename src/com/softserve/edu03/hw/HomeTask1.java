@@ -22,6 +22,4 @@ public class HomeTask1 {
         double p = (a + b + c) / 2.0;
         return Math.sqrt(p * (p - a) * (p - b) * (p - c));
     }
-
-
 }
