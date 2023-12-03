@@ -1,5 +1,7 @@
 package com.softserve.edu04.pt;
 
+import com.softserve.edu04.pt.PraticalTask2.PracticalTask2;
+
 import java.util.Scanner;
 
 public class App {
@@ -8,7 +10,11 @@ public class App {
         System.out.println("Task 1");
         PracticalTask1.run();
 
-        System.out.println("\n Task 2");
+        System.out.println("\nTask 2");
+        PracticalTask2.run();
+
+//        System.out.println("\nTask 3");
+
 
     }
 
