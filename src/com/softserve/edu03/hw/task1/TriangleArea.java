@@ -1,8 +1,8 @@
-package com.softserve.edu03.hw;
+package com.softserve.edu03.hw.task1;
 
 import java.util.Scanner;
 
-public class App {
+public class TriangleArea {
     public static void main(String[] args) {
 
         //Task 1
@@ -16,8 +16,7 @@ public class App {
 
         double area = calculateTriangleArea(side1, side2, side3);
 
-        System.out.println("The area of the triangle is: " + area);//I input 3 5 and 8 and take in the console result  The area of the triangle is: 0.0
-        //Result is not correct
+        System.out.println("The area of the triangle is: " + area);
 
     }
 
