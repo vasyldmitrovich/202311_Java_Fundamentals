@@ -29,7 +29,7 @@ public class HomeWork4 {
     }
 }
 
-class Faculty {
+class Faculty {//Move to Faculty.java
     private int numOfStudents;
     private String currentSeason;
 
@@ -60,7 +60,7 @@ class Faculty {
     }
 }
 
-enum Season {
+enum Season {//Move to Season.java
     WINTER("winter exams"),
     SPRING("spring semester"),
     SUMMER("summer break"),

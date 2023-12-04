@@ -3,7 +3,7 @@ package com.softserve.edu03.hw.EDU03_hw1;
 import java.util.Scanner;
 
 public class Main {
-    public static void main ( String[] args ){
+    public static void main ( String[] args ){//Good
         Scanner scanner = new Scanner( System.in );
 
         AreaOfATriangle areaOfTriangle = new AreaOfATriangle();
