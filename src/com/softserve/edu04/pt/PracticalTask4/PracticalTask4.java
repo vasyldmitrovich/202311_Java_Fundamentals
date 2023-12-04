@@ -4,7 +4,7 @@ public class PracticalTask4 {
     public static void run() {
         Product product1 = new Product("Table", 1, 2000.0);
         Product product2 = new Product("Lamp", 2, 10.0);
-        Product product3 = new Product("Chair", 4, 40.0);
+        Product product3 = new Product("Chair", 10, 40.0);
         Product product4 = new Product("Cup", 10, 1000.0);
 
         Product mostExpensive = product1;
@@ -31,7 +31,22 @@ public class PracticalTask4 {
 
 
         System.out.println("The most expensive product: " + mostExpensive.getName());
-        System.out.println("The most quantity product: " + mostQuantity.getName());
+        System.out.print("The most quantity product(s): ");
+        if (product1.getQuantity() == mostQuantity.getQuantity()) {
+            System.out.print(" " + product1.getName());
+        }
+        if (product2.getQuantity() == mostQuantity.getQuantity()) {
+            System.out.print(" " + product2.getName());
+        }
+        if (product3.getQuantity() == mostQuantity.getQuantity()) {
+            System.out.print(" " + product3.getName());
+        }
+        if (product4.getQuantity() == mostQuantity.getQuantity()) {
+            System.out.print(" " + product4.getName());
+        }
+
+
+
 
 
     }
