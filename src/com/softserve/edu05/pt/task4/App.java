@@ -1,7 +1,6 @@
 package com.softserve.edu05.pt.task4;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.Scanner;
 
@@ -19,14 +18,14 @@ public class App {
         System.out.println("Enter number of department: ");
         int num = Integer.parseInt(scanner.nextLine());
         for (int i = 0; i < employees.length; i++) {
-            if (employees[i].getDepartmentNumber() == num){
+            if (employees[i].getDepartmentNumber() == num) {
                 System.out.println(employees[i].getName());
             }
         }
 
         Arrays.sort(employees, Comparator.comparing(Employee::getSalary));
         Employee[] employeesSorted = new Employee[5];
-        for (int i=0; i<employees.length; i++) {
+        for (int i = 0; i < employees.length; i++) {
             employeesSorted[employees.length - 1 - i] = employees[i];
         }
         employees = employeesSorted;
