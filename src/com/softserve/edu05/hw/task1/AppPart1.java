@@ -9,7 +9,16 @@ public class AppPart1 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number of month: ");
         int i = Integer.parseInt(scanner.nextLine());
-        System.out.println("There are " + months[i-1] + " days in this year.");
+        System.out.println("There are " + getCountOfDays(i, months) + " days in this month.");
 
+    }
+
+    static int getCountOfDays(int number, int[] arr){
+        int countOfDays;
+        if ((number > arr.length)||(number <= 0)){
+            countOfDays = 0;
+        }
+        else {countOfDays = arr[number - 1];}
+        return countOfDays;
     }
 }

@@ -15,16 +15,29 @@ public class AppPart2 {
             }
         }
         System.out.println(Arrays.toString(arr));
+        int result = getSumOrProduct(allFivePositive, arr);
         if (allFivePositive){
-            int sumFirstFive = 0;
-            for (int i = 0; i < 5; i++){ sumFirstFive +=arr[i];}
-            System.out.println("Sum of first five elements: " + sumFirstFive);
+            System.out.println("Sum of first five elements: " + result);
         }
         else {
-            int prodLastFive = 1;
-            for (int i = 5; i < arr.length; i++){ prodLastFive *= arr[i];}
-            System.out.println("Product of last five elements: " + prodLastFive);
+            System.out.println("Product of last five elements: " + result);
         }
 
     }
+
+    static int getSumOrProduct(boolean allFivePositive, int[] arr) {
+        int result;
+        if (allFivePositive) {
+            result = 0;
+            for (int i = 0; i < 5; i++){ result +=arr[i];}
+        }
+        else {
+            result = 1;
+            for (int i = 5; i < arr.length; i++){ result *= arr[i];}
+        }
+        return result;
+
+    }
+
+
 }

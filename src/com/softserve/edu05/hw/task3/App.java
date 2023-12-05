@@ -16,14 +16,23 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter year of production: ");
         int num = Integer.parseInt(scanner.nextLine());
+        getCarOfYear(num, cars);
+        sortCarByYear(cars);
+
+    }
+
+    static void getCarOfYear(int num, Car[] cars) {
         for (int i = 0; i < cars.length; i++) {
-            if (cars[i].getYearOfProduction() == num) {
+            if (cars[i] == null) { continue;}
+            else if (cars[i].getYearOfProduction() == num) {
                 System.out.println(cars[i].getType());
             }
         }
+    }
+
+    static void sortCarByYear(Car[] cars) {
         Arrays.sort(cars, Comparator.comparing(Car::getYearOfProduction));
         System.out.println(Arrays.toString(cars));
     }
-
 
 }
