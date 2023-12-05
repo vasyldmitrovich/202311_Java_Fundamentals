@@ -17,7 +17,7 @@ public class Main {
 
         for (Car car : cars){
             System.out.println(car.toString());
-            System.out.println(car.run());
+            System.out.println(car.run());//Test drive
             System.out.println("*A few moments later...*");
             System.out.println(car.stop());
         }
