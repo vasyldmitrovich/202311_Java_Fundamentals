@@ -15,4 +15,8 @@ public class ColorLine extends Line {
     public String toString() {
         return super.toString() + " color = " + color ;
     }
+
+    public void print(){
+        System.out.println(toString());
+    }
 }

@@ -16,4 +16,8 @@ public class Point {
                 " x = " + x +
                 ", y = " + y;
     }
+
+    public void print(){
+        System.out.println(toString());
+    }
 }
