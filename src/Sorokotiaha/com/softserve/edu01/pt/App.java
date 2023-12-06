@@ -1,4 +1,4 @@
-package com.softserve.edu01.pt;
+package Sorokotiaha.com.softserve.edu01.pt;
 
 public class App {
     public static void main(String[] args) {
