@@ -18,6 +18,6 @@ class AppPart2Test {
     @DisplayName("Work with empty array")
     void test2() {
         int[] arr = new int[10];
-        AppPart2.getSumOrProduct(true, arr);
+        assertTrue(0 == AppPart2.getSumOrProduct(true, arr));
     }
 }
