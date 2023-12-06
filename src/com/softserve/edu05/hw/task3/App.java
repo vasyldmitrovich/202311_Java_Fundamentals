@@ -25,7 +25,7 @@ public class App {
         int count = 0;
         for (int i = 0; i < cars.length; i++) {
             if (cars[i] == null) {
-                continue;
+                //nothing to do
             } else if (cars[i].getYearOfProduction() == num) {
                 count++;
                 System.out.println(cars[i].getType());
