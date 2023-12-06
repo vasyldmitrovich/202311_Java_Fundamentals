@@ -12,17 +12,19 @@ public class AppPart3 {
         int positionMin = 0;
         int minNum = 1000;
         int productEven = 1;
-        for(int i=0; i < arr.length; i++){
-            arr[i] = rnd.nextInt(-100,100);
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = rnd.nextInt(-100, 100);
             if (arr[i] >= 0) {
-                countPositive ++;
-                if (countPositive == 2){ position = i+1;}
+                countPositive++;
+                if (countPositive == 2) {
+                    position = i + 1;
+                }
             }
-            if (Math.min(minNum, arr[i]) == arr[i]){
+            if (Math.min(minNum, arr[i]) == arr[i]) {
                 minNum = arr[i];
-                positionMin = i+1;
+                positionMin = i + 1;
             }
-            if (arr[i]%2 == 0){
+            if (arr[i] % 2 == 0) {
                 productEven *= arr[i];
             }
 

@@ -7,16 +7,14 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         int numberControl = 27;
         int number = 0;
-        while(number != numberControl){
-           System.out.println("Enter the number: ");
-           number = Integer.parseInt(scanner.nextLine());
-           if (number > numberControl) {
-               System.out.println("Too high, try again.");
-           }
-           else if (number < numberControl) {
-               System.out.println("Too low, try again.");
-           }
-           else System.out.println("Exact! Correct!");
+        while (number != numberControl) {
+            System.out.println("Enter the number: ");
+            number = Integer.parseInt(scanner.nextLine());
+            if (number > numberControl) {
+                System.out.println("Too high, try again.");
+            } else if (number < numberControl) {
+                System.out.println("Too low, try again.");
+            } else System.out.println("Exact! Correct!");
         }
     }
 }

@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 class AppTest {
 
     @Test
-    void emptyTest() {
+    void Test() {
+
     }
 }

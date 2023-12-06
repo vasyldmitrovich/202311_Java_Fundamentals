@@ -8,18 +8,17 @@ public class AppPart2 {
         int[] arr = new int[10];
         Random rnd = new Random();
         boolean allFivePositive = true;
-        for(int i=0; i < arr.length; i++){
-            arr[i] = rnd.nextInt(-100,100);
-            if ((i < 5) & ( arr[i]<0)) {
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = rnd.nextInt(-100, 100);
+            if ((i < 5) & (arr[i] < 0)) {
                 allFivePositive = false;
             }
         }
         System.out.println(Arrays.toString(arr));
         int result = getSumOrProduct(allFivePositive, arr);
-        if (allFivePositive){
+        if (allFivePositive) {
             System.out.println("Sum of first five elements: " + result);
-        }
-        else {
+        } else {
             System.out.println("Product of last five elements: " + result);
         }
 
@@ -29,11 +28,14 @@ public class AppPart2 {
         int result;
         if (allFivePositive) {
             result = 0;
-            for (int i = 0; i < 5; i++){ result +=arr[i];}
-        }
-        else {
+            for (int i = 0; i < 5; i++) {
+                result += arr[i];
+            }
+        } else {
             result = 1;
-            for (int i = 5; i < arr.length; i++){ result *= arr[i];}
+            for (int i = 5; i < arr.length; i++) {
+                result *= arr[i];
+            }
         }
         return result;
 

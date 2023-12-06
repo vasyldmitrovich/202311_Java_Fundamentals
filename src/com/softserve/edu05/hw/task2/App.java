@@ -14,11 +14,15 @@ public class App {
             int num1 = Integer.parseInt(scanner.nextLine());
             System.out.println("Enter the second number: ");
             int num2 = Integer.parseInt(scanner.nextLine());
-            System.out.println("Sum of numbers: " + (num1 + num2));
+            System.out.println("Sum of numbers: " + getSum(num1, num2));
             System.out.println("Continue?");
             answer = scanner.nextLine().toLowerCase();
         }
         while (answer.equals("yes"));
 
+    }
+
+    static int getSum(int n1, int n2) {
+        return n1 + n2;
     }
 }

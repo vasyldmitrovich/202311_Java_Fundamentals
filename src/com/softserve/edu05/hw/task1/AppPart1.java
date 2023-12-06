@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class AppPart1 {
     public static void main(String[] args) {
 
-        int[] months = {31,28,31,30,31,30,31,31,30,31,30,31};
+        int[] months = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number of month: ");
         int i = Integer.parseInt(scanner.nextLine());
@@ -13,12 +13,13 @@ public class AppPart1 {
 
     }
 
-    static int getCountOfDays(int number, int[] arr){
+    static int getCountOfDays(int number, int[] arr) {
         int countOfDays;
-        if ((number > arr.length)||(number <= 0)){
+        if ((number > arr.length) || (number <= 0)) {
             countOfDays = 0;
+        } else {
+            countOfDays = arr[number - 1];
         }
-        else {countOfDays = arr[number - 1];}
         return countOfDays;
     }
 }

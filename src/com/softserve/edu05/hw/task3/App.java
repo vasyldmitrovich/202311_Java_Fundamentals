@@ -16,18 +16,22 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter year of production: ");
         int num = Integer.parseInt(scanner.nextLine());
-        getCarOfYear(num, cars);
+        int count = getCarOfYear(num, cars);
         sortCarByYear(cars);
 
     }
 
-    static void getCarOfYear(int num, Car[] cars) {
+    static int getCarOfYear(int num, Car[] cars) {
+        int count = 0;
         for (int i = 0; i < cars.length; i++) {
-            if (cars[i] == null) { continue;}
-            else if (cars[i].getYearOfProduction() == num) {
+            if (cars[i] == null) {
+                continue;
+            } else if (cars[i].getYearOfProduction() == num) {
+                count++;
                 System.out.println(cars[i].getType());
             }
         }
+        return count;
     }
 
     static void sortCarByYear(Car[] cars) {

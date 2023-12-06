@@ -8,7 +8,7 @@ class AppPart2Test {
     @Test
     @DisplayName("Work with 5 first positive numbers")
     void test1() {
-        int[] arr = {1,2,4,5,6,7,8,};
+        int[] arr = {1, 2, 4, 5, 6, 7, 8,};
         AppPart2.getSumOrProduct(true, arr);
     }
 
