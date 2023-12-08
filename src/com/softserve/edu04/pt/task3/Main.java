@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.print("Enter the name of the country: ");
         String countryName = scanner.nextLine();
-        Continent continent =Continent.getContinent(countryName);
+        Continent continent = Continent.getContinent(countryName);
         System.out.print(countryName + " is in the continent " + continent);
     }
 }
@@ -19,7 +19,7 @@ enum Continent {
     @Override
     public String toString() {
         String name = name();
-        return name.charAt(0) +name.substring(1).toLowerCase();
+        return name.charAt(0) + name.substring(1).toLowerCase();
     }
     public static Continent getContinent(String country) {
         return switch (country) {
