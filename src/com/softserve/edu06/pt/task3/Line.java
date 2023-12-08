@@ -2,8 +2,8 @@ package com.softserve.edu06.pt.task3;
 
 public class Line {
 
-    Point a;
-    Point b;
+    private Point a;
+    private Point b;
 
     public Point getA() {
         return a;

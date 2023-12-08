@@ -2,7 +2,7 @@ package com.softserve.edu06.hw.task1;
 
 public class Eagle extends FlyingBird {
 
-    String name;
+    private String name;
 
     public String getName() {
         return name;
@@ -19,8 +19,8 @@ public class Eagle extends FlyingBird {
     public String toString() {
         return "Eagle{" +
                 "name='" + name + '\'' +
-                ", feathers='" + feathers + '\'' +
-                ", layEggs=" + layEggs +
+                ", feathers='" + this.getFeathers() + '\'' +
+                ", layEggs=" + this.getLayEggs() +
                 '}';
     }
 }

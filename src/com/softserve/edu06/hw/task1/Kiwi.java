@@ -1,7 +1,7 @@
 package com.softserve.edu06.hw.task1;
 
 public class Kiwi extends NonFlyingBird {
-    String name;
+    private String name;
 
     public String getName() {
         return name;
@@ -15,8 +15,8 @@ public class Kiwi extends NonFlyingBird {
     public String toString() {
         return "Kiwi{" +
                 "name='" + name + '\'' +
-                ", feathers='" + feathers + '\'' +
-                ", layEggs=" + layEggs +
+                ", feathers='" + this.getFeathers() + '\'' +
+                ", layEggs=" + this.getLayEggs() +
                 '}';
     }
 }

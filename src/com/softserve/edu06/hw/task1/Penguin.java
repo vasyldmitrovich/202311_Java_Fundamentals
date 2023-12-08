@@ -15,8 +15,8 @@ public class Penguin extends NonFlyingBird {
     public String toString() {
         return "Penguin{" +
                 "name='" + name + '\'' +
-                ", feathers='" + feathers + '\'' +
-                ", layEggs=" + layEggs +
+                ", feathers='" + this.getFeathers() + '\'' +
+                ", layEggs=" + this.getLayEggs() +
                 '}';
     }
 }

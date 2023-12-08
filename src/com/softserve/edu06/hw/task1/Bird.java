@@ -1,8 +1,8 @@
 package com.softserve.edu06.hw.task1;
 
 public abstract class Bird {
-    String feathers;
-    int layEggs;
+    private String feathers;
+    private int layEggs;
 
     public String getFeathers() {
         return feathers;

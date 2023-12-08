@@ -6,29 +6,29 @@ public class App {
         Car[] cars = new Car[5];
 
         Truck truck1 = new Truck();
-        truck1.maxSpeed = 250;
-        truck1.model = "Toyota";
-        truck1.yearOfProduction = 2011;
+        truck1.setMaxSpeed(250);
+        truck1.setModel("Toyota");
+        truck1.setYearOfProduction(2011);
 
         Truck truck2 = new Truck();
-        truck2.maxSpeed = 280;
-        truck2.model = "Toyota";
-        truck2.yearOfProduction = 2021;
+        truck2.setMaxSpeed(280);
+        truck2.setModel("Toyota");
+        truck2.setYearOfProduction(2021);
 
         Truck truck3 = new Truck();
-        truck3.maxSpeed = 300;
-        truck3.model = "Toyota";
-        truck3.yearOfProduction = 2017;
+        truck3.setMaxSpeed(300);
+        truck3.setModel("Toyota");
+        truck3.setYearOfProduction(2017);
 
         Sedan sedan1 = new Sedan();
-        sedan1.maxSpeed = 180;
-        sedan1.model = "Toyota";
-        sedan1.yearOfProduction = 2018;
+        sedan1.setMaxSpeed(180);
+        sedan1.setModel("Toyota");
+        sedan1.setYearOfProduction(2018);
 
         Sedan sedan2 = new Sedan();
-        sedan2.maxSpeed = 180;
-        sedan2.model = "BMW";
-        sedan2.yearOfProduction = 2018;
+        sedan2.setMaxSpeed(180);
+        sedan2.setModel("BMW");
+        sedan2.setYearOfProduction(2018);
 
         cars[0] = truck1;
         cars[1] = truck2;

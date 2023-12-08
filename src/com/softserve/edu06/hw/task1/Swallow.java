@@ -15,8 +15,8 @@ public class Swallow extends FlyingBird {
     public String toString() {
         return "Swallow{" +
                 "name='" + name + '\'' +
-                ", feathers='" + feathers + '\'' +
-                ", layEggs=" + layEggs +
+                ", feathers='" + this.getFeathers() + '\'' +
+                ", layEggs=" + this.getLayEggs() +
                 '}';
     }
 }
