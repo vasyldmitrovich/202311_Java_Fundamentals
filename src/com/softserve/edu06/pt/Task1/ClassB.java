@@ -1,28 +1,18 @@
 package com.softserve.edu06.pt.Task1;
 
 public class ClassB extends ClassA{
-    @Override
-    public String m1() {
-        return super.m1();
+
+    public double i = 1.1;
+
+    public void m1() {
+        System.out.println("ClassB, method m1, i = " + i);
     }
 
-    @Override
-    public String m2() {
-        return super.m2();
+    public void m4() {
+        System.out.println("ClassB, method m4");
     }
 
-    @Override
-    public String m3() {
-        return super.m3();
-    }
-
-    @Override
-    public String m4() {
-        return super.m4();
-    }
-
-    @Override
-    public String m5() {
-        return super.m5();
+    public void m5() {
+        System.out.println("ClassB, method m5, i = " + i);
     }
 }
