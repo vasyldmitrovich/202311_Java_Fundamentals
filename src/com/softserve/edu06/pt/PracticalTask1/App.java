@@ -89,7 +89,7 @@ public class App {
         b.m3();
         b.m4();
         //b.m5();
-        ((ClassB) b).m5();
+        //((ClassB) b).m5();
         if (b instanceof ClassB) {
             ((ClassB) b).m5(); // No Runtime Error
         }
