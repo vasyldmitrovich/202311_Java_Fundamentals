@@ -9,10 +9,12 @@ public class Teacher extends Staff {
 
     @Override
     void print() {
-        System.out.println("I am a " + TYPE_PERSON);
+        System.out.println("I am a " + TYPE_PERSON + " my name is " +  this.name);
     }
 
-    public Teacher() {
+    public Teacher(String name)
+    {   this.name = name;
         System.out.println(TYPE_PERSON);
     }
+
 }

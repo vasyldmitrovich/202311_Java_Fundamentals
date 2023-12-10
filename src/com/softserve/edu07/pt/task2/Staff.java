@@ -5,6 +5,6 @@ public abstract class Staff extends Person {
     abstract void salary();
     @Override
     void print() {
-        System.out.println("I am a " + TYPE_PERSON);
+        System.out.println("I am a " + TYPE_PERSON + " my name is " +  this.name);
     }
 }
