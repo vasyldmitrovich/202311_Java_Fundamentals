@@ -6,7 +6,7 @@ public abstract class Employee {
     String employeeId;
     double salary;
 
-    public static Comparator<Employee> SalaryComparator = new Comparator <Employee>(){
+    public static Comparator<Employee> SalaryComparator = new Comparator<Employee>() {
         @Override
         public int compare(Employee o1, Employee o2) {
             return (int) (o2.getSalary() - o1.getSalary());
