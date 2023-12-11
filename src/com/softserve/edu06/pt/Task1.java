@@ -10,6 +10,8 @@ public class Task1 {
         a.m2();
         a.m3();
         a.m4();
+        a.m6();
+        a.m8();
 
         ClassB b = new ClassB();
         System.out.println("Test ClassB:");
@@ -46,6 +48,14 @@ class ClassA {
 
     public void m4() {
         System.out.println("ClassA, method m4");
+    }
+
+    public static void m6() {
+        System.out.println("ClassA, method m6");
+    }
+
+    protected void m8() {
+        System.out.println("ClassA, method m8");
     }
 }
 class ClassB extends ClassA {
