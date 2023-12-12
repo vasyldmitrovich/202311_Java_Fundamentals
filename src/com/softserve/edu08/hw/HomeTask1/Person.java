@@ -1,6 +1,6 @@
 package com.softserve.edu08.hw.HomeTask1;
 
-abstract class Person {
+abstract public class Person {
     private FullName fullName;
     private int age;
 
@@ -10,7 +10,7 @@ abstract class Person {
     }
 
     public String info() {
-        return "First name :" + fullName.getFirstName()
+        return "First name: " + fullName.getFirstName()
                 + ", Last name: " + fullName.getLastName()
                 + ", Age: " + age;
     }
