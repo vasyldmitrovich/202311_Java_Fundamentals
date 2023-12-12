@@ -2,6 +2,14 @@ package com.softserve.edu08.pt.PracticalTask1;
 
 public class Department implements Cloneable {
     private String name;
+
+    @Override
+    public String toString() {
+        return "Department{" +
+                "name='" + name + '\''
+                ;
+    }
+
     private Address address;
 
     public Department(String name) {
@@ -33,19 +41,11 @@ public class Department implements Cloneable {
     public Department clone() {
         try {
             Department clone = (Department) super.clone();
-            clone.address = (Address) clone.address.clone();
+            clone.address = (Address) address.clone();
             return clone;
         } catch (CloneNotSupportedException e) {
             throw new AssertionError();
         }
-    }
-
-    @Override
-    public String toString() {
-        return "Department{" +
-                "name='" + name + '\'' +
-                ", address=" + address +
-                '}';
     }
 
     public class Address implements Cloneable {
@@ -57,7 +57,7 @@ public class Department implements Cloneable {
 
         @Override
         public String toString() {
-            return "Address{" +
+            return Department.this.toString() + "Address{" +
                     "city='" + city + '\'' +
                     ", street='" + street + '\'' +
                     ", buildingNumber=" + buildingNumber +
