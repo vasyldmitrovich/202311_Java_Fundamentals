@@ -1,6 +1,7 @@
 package com.softserve.edu07.hw;
 
 import java.text.DecimalFormat;
+import java.util.Arrays;
 import java.util.Random;
 
 
@@ -15,6 +16,10 @@ public class Homework1 {
 
         // assign values and paramenters to each employee
         assignParametersToEmployees( employees );
+        System.out.println(Arrays.toString(employees));
+
+        // sort arrays according to the size of average monthly remuneration, descending order
+        sortArray(employees);
 
         // output the result of assignments and remuneration calculations
         outputResults( employees );
@@ -23,9 +28,11 @@ public class Homework1 {
 
     // create array of employees
     static Employee[] createArrayOfEmployees() {
-        Employee[] employees = new Employee[10];  // array for 10 employees
+        // array for 10 employees
+        Employee[] employees = new Employee[10];
 
-        // create the array of employees. The random generator is set to either 1 or 2.  1 is Salaried Employee, 2 is Contract employee
+        // create the array of employees. The random generator is set to either 1 or 2.
+        // 1 is Salaried Employee, 2 is Contract employee
         for (int i = 0; i < employees.length; i++) {
             int rnd = R.nextInt(1,3);
             switch (rnd) {
@@ -39,6 +46,14 @@ public class Homework1 {
             // assign employee ID to the employee
             String eid = "" + R.nextInt(100, 999);
             employees[i].setEmployeeId(eid);
+
+            // assign names to employees.  Randomly choose names from the list provided in array 'names'
+            String[] names = {
+                    "Pedro", "Pablo", "Juan", "Jorge", "Iker", "Javier",
+                    "Matilda", "Perfecta", "Mercedes", "Anna", "Pepita", "Jimena"
+            };
+            int num = R.nextInt(0,12);
+            employees[i].setName(names[num]);
         }
         return employees;
     }
@@ -48,35 +63,41 @@ public class Homework1 {
         for (int i = 0; i < employees.length; i++) {
 
             if( employees[i] instanceof SalariedEmployee se) {
-                String ssn = "" + R.nextLong(100_000_000, 999_999_999); // soc sec number
+                // soc sec number
+                String ssn = "" + R.nextLong(100_000_000, 999_999_999);
                 se.setSocialSecurityNumber(ssn);
-                double ms = R.nextDouble(10000, 20000);  // monthly salary
+                // monthly salary
+                double ms = R.nextDouble(10000, 20000);
                 se.setMonthlySalary(ms);
+                // average monthly salary
+                se.setMonthlyRemuneration(se.calculatePay());
             }
 
             if( employees[i] instanceof ContractEmployee ce ) {
-                String ft = "" + R.nextLong(100_000_000, 999_999_999);  // federal tax id
+                // federal tax id
+                String ft = "" + R.nextLong(100_000_000, 999_999_999);
                 ce.setFederalTaxIDmember(ft);
-                double hr = R.nextDouble(150, 1000); // hourly rate
+                // hourly rate
+                double hr = R.nextDouble(150, 1000);
                 ce.setHourlyRate(hr);
-                double hw = R.nextDouble(10, 160); // hours worked
+                // hours worked
+                double hw = R.nextDouble(10, 160);
                 ce.setNumOfHoursWorked(hw);
+                // average monthly salary
+                ce.setMonthlyRemuneration(ce.calculatePay());
             }
         }
+    }
+
+    // sort employees by the size of average monthly remuneration, descending order
+    static void sortArray( Employee[] employees ) {
+        Arrays.sort(employees);
     }
 
     // output the results
     static void outputResults( Employee[] employees ) {
         for( Employee e : employees ) {
             System.out.println(e);
-            if( e instanceof SalariedEmployee se ) {
-                System.out.println("Monthly remuneration of this employee with id " + e.getEmployeeId() + " is " +
-                        DF.format(se.calculatePay()) + ".");
-            }
-            if( e instanceof ContractEmployee ce ) {
-                System.out.println("Monthly remuneration of this employee with id " + e.getEmployeeId() + " is " +
-                        DF.format(ce.calculatePay()) + ".");
-            }
             System.out.println();
         }
     }
@@ -85,8 +106,10 @@ public class Homework1 {
 interface Payment {
     double calculatePay();
 }
-abstract class Employee {
+abstract class Employee implements Comparable<Employee> {
     private String employeeId;
+    private String name;
+    private double monthlyRemuneration;
 
     public void setEmployeeId(String employeeId) {
         this.employeeId = employeeId;
@@ -94,6 +117,27 @@ abstract class Employee {
 
     public String getEmployeeId() {
         return employeeId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getMonthlyRemuneration() {
+        return monthlyRemuneration;
+    }
+
+    public void setMonthlyRemuneration(double monthlyRemuneration) {
+        this.monthlyRemuneration = monthlyRemuneration;
+    }
+
+    @Override
+    public int compareTo(Employee employee) {
+        return -( (int)monthlyRemuneration - (int)employee.monthlyRemuneration );
     }
 }
 
@@ -118,12 +162,14 @@ class SalariedEmployee extends Employee implements Payment {
     @Override
     public String toString() {
         return "SalariedEmployee{" +
-                "employeeID= '" + getEmployeeId() + '\'' +
+                "employee Name='" + getName() + '\'' +
+                ", employeeID= '" + getEmployeeId() + '\'' +
                 ", socialSecurityNumber='" + socialSecurityNumber + '\'' +
-                ", monthlySalary=" + df.format(monthlySalary) +
+                ", average monthly salary=" + df.format(getMonthlyRemuneration()) +
                 '}';
     }
 }
+
 class ContractEmployee extends Employee implements Payment {
     DecimalFormat df = new DecimalFormat("0");
     private String federalTaxIDmember;
@@ -150,10 +196,10 @@ class ContractEmployee extends Employee implements Payment {
     @Override
     public String toString() {
         return "ContractEmployee{" +
-                "employeeID= '" + getEmployeeId() + '\'' +
+                "employee Name='" + getName() + '\'' +
+                ", employeeID= '" + getEmployeeId() + '\'' +
                 ", federalTaxIDmember='" + federalTaxIDmember + '\'' +
-                ", hourlyRate=" + df.format(hourlyRate) +
-                ", numOfHoursWorked=" + df.format(numOfHoursWorked) +
+                ", average monthly salary=" + df.format(getMonthlyRemuneration()) +
                 '}';
     }
 }
