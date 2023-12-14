@@ -6,8 +6,7 @@ public class Task3 {
     private static final Scanner SCANNER = new Scanner(System.in);
 
     public static void main(String[] args) {
-        //int[] arr = inputArray();
-        int[] arr = {1, -1, -2, 0, 4}; // Output: (3) (-2 2) (-8)
+        int[] arr = inputArray();
 
         //position of second positive number
         System.out.println("Position of second positive number is " + positionOfSecondPositiveNumber(arr));
@@ -18,9 +17,23 @@ public class Task3 {
 
     }
 
-    private static long productOfAllEvenNumbers(int[] arr) {
+    static long productOfAllEvenNumbers(int[] arr) {
         int product = 1;
-        for (int element : arr) {
+        boolean atLeastOneEven = false;
+        for (int element : arr){
+            if(element == 0){
+                continue;
+            }
+            if(element % 2 == 0){
+                atLeastOneEven = true;
+                break;
+            }
+        }
+        if (!atLeastOneEven){
+            return 0;
+        }
+
+            for (int element : arr) {
             if (element == 0) {
                 continue;
             }
@@ -31,7 +44,7 @@ public class Task3 {
         return product;
     }
 
-    private static int minimumValuePosition(int[] arr) {
+    static int minimumValuePosition(int[] arr) {
         int min = arr[0];
         int position = 0;
         for (int i = 1; i < arr.length; i++) {
@@ -43,7 +56,7 @@ public class Task3 {
         return position;
     }
 
-    private static int positionOfSecondPositiveNumber(int[] arr) {
+    static int positionOfSecondPositiveNumber(int[] arr) {
         int countOfPositives = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > 0) {
