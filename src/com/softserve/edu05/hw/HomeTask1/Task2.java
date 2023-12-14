@@ -20,7 +20,7 @@ public class Task2 {
 
     }
 
-    private static int productOfLastFiveElements(int[] arr) {
+    static int productOfLastFiveElements(int[] arr) {
         int prduct = 1;
         for (int i = 5; i < 10; i++) {
             prduct *= arr[i];
@@ -28,7 +28,7 @@ public class Task2 {
         return prduct;
     }
 
-    private static int sumOfFirstFiveElements(int[] arr) {
+    static int sumOfFirstFiveElements(int[] arr) {
         int sum = 0;
         for (int i = 0; i < 5; i++) {
             sum += arr[i];
@@ -36,7 +36,7 @@ public class Task2 {
         return sum;
     }
 
-    private static boolean firstFiveNumbersArePositive(int[] arr) {
+    static boolean firstFiveNumbersArePositive(int[] arr) {
         for (int i = 0; i < 5; i++) {
             if (arr[i] < 0) {
                 return false;
