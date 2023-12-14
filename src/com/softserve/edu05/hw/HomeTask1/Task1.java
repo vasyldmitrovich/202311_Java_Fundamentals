@@ -8,6 +8,11 @@ public class Task1 {
     //private static final Scanner SCANNER = new Scanner(System.in);
 
     public static void main(String[] args) {
+        report();
+
+    }
+
+    static void report() {
         int monthNumber = getMonthNumber();
         try {
             System.out.println(getDaysInMonth(monthNumber) + " days in " + getMonth(monthNumber));
@@ -15,7 +20,6 @@ public class Task1 {
         catch (ArrayIndexOutOfBoundsException e){
             System.out.println("Invalid month number: " + monthNumber);
         }
-
     }
 
     static int getMonthNumber() {

@@ -6,7 +6,9 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
+import java.io.PrintStream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -54,6 +56,21 @@ class Task1Test {
         int expectedNumber = -1;
         var res = Task1.getMonthNumber();
         assertEquals(expectedNumber, res);
+    }
+
+    @Test
+    @DisplayName("Correct program output")
+    void reportTest(){
+        String expectedString = ("30 days in June");
+        provideInput("6");
+        var old = System.out;
+        var os = new ByteArrayOutputStream();
+        var ps = new PrintStream(os);
+        System.setOut(ps);
+        Task1.report();
+        System.setOut(old);
+        assertTrue(os.toString().trim().endsWith(expectedString));
+
     }
 
     private void provideInput(String text){
