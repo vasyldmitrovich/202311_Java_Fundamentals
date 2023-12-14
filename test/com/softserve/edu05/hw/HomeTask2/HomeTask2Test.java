@@ -1,33 +1,30 @@
 package com.softserve.edu05.hw.HomeTask2;
 
-import com.softserve.edu05.hw.HomeTask1.Task1;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class HomeTask2Test {
-    private InputStream oldIn;
-    @BeforeEach
-    void saveSystemIn(){
-        oldIn = System.in;
-    }
+    private static final InputStream OLD_IN = System.in;
+
     @AfterEach
-    void RestoreSystemIn(){
-        System.setIn(oldIn);
+    void RestoreSystemIn() {
+        System.setIn(OLD_IN);
     }
-    private void provideInput(String text){
+
+    private void provideInput(String text) {
         System.setIn(new ByteArrayInputStream(text.getBytes()));
     }
+
     @Test
     @DisplayName("Correct number entered")
+    @Order(1)
     void getMonthNumberTest2() {
-        provideInput("13");
+        provideInput("13\n");
         int expectedNumber = 13;
         var res = HomeTask2.getNumber();
         assertEquals(expectedNumber, res);
@@ -35,51 +32,58 @@ class HomeTask2Test {
 
     @Test
     @DisplayName("Correct sum")
+    @Order(2)
     public void sumTest() {
         int a = 5;
         int b = 10;
-        int res = HomeTask2.sum(a,b);
-        assertEquals(15, res);
+        int res = HomeTask2.sum(a, b);
+        assertEquals(a + b, res);
     }
 
     @Test
     @DisplayName("Correct answer return 1")
+    @Order(3)
     public void getAnswerTest1() {
-        provideInput("Yes");
+        provideInput("Yes\n");
         String result = HomeTask2.getAnswer();
         assertEquals("yes", result);
     }
+
     @Test
     @DisplayName("Correct answer return 2")
+    @Order(4)
     public void getAnswerTest2() {
-        provideInput("yEs");
+        provideInput("yEs\n");
         String result = HomeTask2.getAnswer();
         assertEquals("yes", result);
     }
+
     @Test
     @DisplayName("Correct answer return 3")
+    @Order(5)
     public void getAnswerTest3() {
-        provideInput("yeS");
+        provideInput("yeS\n");
         String result = HomeTask2.getAnswer();
         assertEquals("yes", result);
     }
 
     @Test
     @DisplayName("Correct answer return 4")
+    @Order(6)
     public void getAnswerTest4() {
-        provideInput("YES");
+        provideInput("YES\n");
         String result = HomeTask2.getAnswer();
         assertEquals("yes", result);
     }
 
     @Test
     @DisplayName("Correct answer return 5")
+    @Order(7)
     public void getAnswerTest5() {
-        provideInput("Y");
+        provideInput("Y\n");
         String result = HomeTask2.getAnswer();
         assertEquals("y", result);
     }
-
 
 
 }
