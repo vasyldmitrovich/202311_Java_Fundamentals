@@ -11,6 +11,8 @@ public class Main {
 
         for (Car car : cars) {
             System.out.println(car.toString());
+            car.run();
+            car.stop();
         }
     }
 }
