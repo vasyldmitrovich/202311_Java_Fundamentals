@@ -26,7 +26,7 @@ public class Main {
 }
 
 class ClassA {
-    int m1, m2, m3, m4, m5;
+    int m1, m2, m3, m4;
 
     void m1() {
         System.out.println("m1 in A");
@@ -46,5 +46,5 @@ class ClassA {
 }
 
 class ClassB extends ClassA {
-
+    int m5;
 }
