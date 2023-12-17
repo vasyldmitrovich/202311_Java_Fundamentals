@@ -2,7 +2,7 @@ package com.softserve.edu04.hw04;
 
 import java.util.Scanner;
 
-public class HTTPError {
+public class HTTPError {//This line do not need
     public enum HTTP {
         BadRequest(400),//better to use here 400("Bad Request") and the same for other codes
         Unauthorized(401),

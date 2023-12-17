@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Person {
 
-    Person[] personArray = new Person[5];
+    Person[] personArray = new Person[5];//That should be for example in class App.java
     private String firstName;
     private String lastName;
     private int birthYear;
@@ -43,7 +43,7 @@ public class Person {
         this.birthYear = birthYear;
     }
 
-    public void programMenu() {
+    public void programMenu() {//Move to class App.java
         boolean exit = false;
         while (!exit) {
             System.out.println("Select the desired menu\n 1. Input information about person\n 2. Get information about person\n 3. Change information about person\n 4. Exit");

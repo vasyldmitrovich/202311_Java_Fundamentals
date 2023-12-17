@@ -3,7 +3,7 @@ package com.softserve.edu03.hw03;
 import java.util.Scanner;
 
 public class HomeWork3 {
-
+    //If this variables used only once in method than do not write this variables here
     double firstSide;
     double secondSide;
     double thirdSide;
