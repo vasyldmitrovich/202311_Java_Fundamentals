@@ -2,7 +2,7 @@ package edu04.hw;
 
 import java.util.Scanner;
 
-public class task01 {
+public class task01 {//Name of class from Upper case not lower case
     public static class RangeCheck {
         public static void main(String[] args) {
             var scanner = new Scanner(System.in);

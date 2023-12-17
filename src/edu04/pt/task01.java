@@ -3,7 +3,7 @@ package edu04.pt;
 import java.util.Scanner;
 
 public class task01 {
-    private static final Scanner SCANNER = new Scanner(System.in);
+    private static final Scanner SCANNER = new Scanner(System.in);//Ok
 
     public static void main(String[] args) {
         int num1 = SCANNER.nextInt();

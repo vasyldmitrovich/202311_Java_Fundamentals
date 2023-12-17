@@ -3,7 +3,7 @@ package edu04.hw;
 import java.util.Scanner;
 
 public class task03 {
-    enum HTTPError {
+    enum HTTPError {//This enum should be in file HTTPError.java file not here
         ERROR_400("Bad Request"),
         ERROR_401("Unauthorized"),
         ERROR_402("Payment Required"),

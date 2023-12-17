@@ -1,6 +1,6 @@
 package edu03.hw;
 import java.util.Scanner;
-public class app {
+public class app {//Name of class should start from Upper case
     public static double area(double a, double height) {
         return 0.5 * a * height;
     }
