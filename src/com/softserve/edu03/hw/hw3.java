@@ -1,4 +1,4 @@
-package Sorokotiaha.com.softserve.edu03.hw;
+package com.softserve.edu03.hw;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;

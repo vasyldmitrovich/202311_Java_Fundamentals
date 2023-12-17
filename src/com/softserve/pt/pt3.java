@@ -1,4 +1,4 @@
-package Sorokotiaha.com.softserve.edu4.pt;
+package com.softserve.pt;
 
 import java.util.Scanner;
 public class pt3 {
@@ -11,7 +11,7 @@ public class pt3 {
     }
 }
 
-enum Continent {
+enum Continent {//Do not make this class inner, create file Continent.java and move this enum here
     EURASIA, AFRICA, NORTHAMERICA, SOUTHAMERICA, ANTARCTICA, AUSTRALIA;
 
     @Override

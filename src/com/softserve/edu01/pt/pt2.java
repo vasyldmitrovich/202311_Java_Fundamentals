@@ -1,4 +1,4 @@
-package Sorokotiaha.com.softserve.edu01.pt;
+package com.softserve.edu01.pt;
 
 import java.util.Locale;
 import java.util.Scanner;

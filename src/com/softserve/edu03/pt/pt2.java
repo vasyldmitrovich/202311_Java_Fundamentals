@@ -1,4 +1,4 @@
-package Sorokotiaha.com.softserve.edu03.pt;
+package com.softserve.edu03.pt;
 
 public class pt2 {
     public static void main(String[] args) {
