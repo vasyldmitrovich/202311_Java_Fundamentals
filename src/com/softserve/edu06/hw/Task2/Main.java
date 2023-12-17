@@ -1,6 +1,6 @@
 package com.softserve.edu06.hw.Task2;
 
-public class Main {
+public class Main {//Ok
     public static void main(String[] args) {
 
         Employee employee1 = new Employee("Jora",25,300000000);
