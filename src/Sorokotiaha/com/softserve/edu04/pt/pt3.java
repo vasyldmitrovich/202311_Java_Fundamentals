@@ -1,4 +1,4 @@
-package Sorokotiaha.com.softserve.edu4.pt;
+package Sorokotiaha.com.softserve.edu04.pt;
 
 import java.util.Scanner;
 public class pt3 {
