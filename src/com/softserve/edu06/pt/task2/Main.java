@@ -17,8 +17,8 @@ public class Main {
     }
 }
 
-abstract class Car {
-    String model;
+abstract class Car {//Move to file Car.java
+    String model;//Do field private and write getters and setters DO THE SAME WITH ANOTHER CLASSES
     int maxSpeed;
     int yearOfProduction;
 

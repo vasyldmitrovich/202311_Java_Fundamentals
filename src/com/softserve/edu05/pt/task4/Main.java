@@ -3,7 +3,7 @@ package com.softserve.edu05.pt.task4;
 
 import java.util.Scanner;
 
-public class Main {
+public class Main {//Move to App.java
     private static final Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         Employee[] employees = {
@@ -28,7 +28,7 @@ public class Main {
         }
     }
 }
-class Employee {
+class Employee {//This class should be in Employee.java file not here
     private String name;
     private int departmentNumber;
     private double salary;
