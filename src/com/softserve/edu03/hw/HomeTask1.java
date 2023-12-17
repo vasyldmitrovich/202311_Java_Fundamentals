@@ -2,7 +2,7 @@ package com.softserve.edu03.hw;
 
 import static com.softserve.edu03.hw.App.SCANNER;
 
-public class HomeTask1 {
+public class HomeTask1 {//Good
     private static int sideNumber = 1;
 
     public static void run() {

@@ -3,6 +3,8 @@ package com.softserve.edu08.pt.PracticalTask1;
 public class Department implements Cloneable {
     private String name;
 
+    //Write toString after getters and setters
+    //And move Constructors after fields and before getters
     @Override
     public String toString() {
         return "Department{" +
@@ -88,6 +90,7 @@ public class Department implements Cloneable {
             return buildingNumber;
         }
 
+        //Fields should be at the top of the class
         private String city;
         private String street;
         private int buildingNumber;

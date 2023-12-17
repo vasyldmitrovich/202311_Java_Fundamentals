@@ -1,6 +1,6 @@
 package com.softserve.edu07.hw.HomeTask1;
 
-public class ContractEmployee extends Employee implements Payment {
+public class ContractEmployee extends Employee implements Payment {//This interface should implement class Employee
     private long federalTaxIdMember;
     private double hourlyRate;
     private int numbersOfHoursWorked;

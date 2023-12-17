@@ -5,7 +5,7 @@ import com.softserve.edu08.hw.HomeTask1.FullName;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class Main {//Nice very nice
     public static void main(String[] args) {
         List<Student> students = new ArrayList<>();
         students.add(new Student(new FullName("Lewis ", "Hamilton"), 36, 1));
