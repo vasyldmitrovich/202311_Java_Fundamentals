@@ -1,6 +1,6 @@
 package com.softserve.edu06.hw.task1;
 
-public class App {
+public class App {//Good all is good
     public static void main(String[] args) {
         Bird[] birds = new Bird[4];
 

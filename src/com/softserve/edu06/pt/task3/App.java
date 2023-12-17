@@ -1,6 +1,6 @@
 package com.softserve.edu06.pt.task3;
 
-public class App {
+public class App {//Nice
     public static void main(String[] args) {
 
         Line[] lines = new Line[5];
