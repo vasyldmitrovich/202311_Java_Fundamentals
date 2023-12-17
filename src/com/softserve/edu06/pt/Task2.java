@@ -47,7 +47,7 @@ public class Task2 {
         }
     }
 }
-abstract class Car{
+abstract class Car{//All ok but do not make inner classes. Each class should be in own file
     private String model;
     private int maxSpeed;
     private int yearOfProduction;

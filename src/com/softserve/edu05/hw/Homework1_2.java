@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 
-public class Homework1_2 {
+public class Homework1_2 {//Ok
     public static void main(String[] args) {
 
         /*Create a program that prompts the user to enter 10 integer numbers and calculates the sum
