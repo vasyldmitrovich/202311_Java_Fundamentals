@@ -2,7 +2,7 @@ package com.softserve.edu08.pt.Task1;
 
 public class App {
     public static void main(String[] args) throws CloneNotSupportedException {
-        Department department1 = new Department("Dep1", "Sofia","Vitosha",23);
+        Department department1 = new Department("Dep 1", "Sofia","Vitosha",23);
         Department cloneDep = (Department) department1.clone();
 
         cloneDep.getAddress().city= "Karlovo";

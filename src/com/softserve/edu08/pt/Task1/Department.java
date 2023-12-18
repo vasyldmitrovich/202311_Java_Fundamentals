@@ -42,10 +42,10 @@ public class Department implements Cloneable{
 
         @Override
         public String toString() {
-            return "Address: " +
+            return ". Address: " +
                     "city = " + city +
                     ", street = " + street +
-                    ", building= " + building;
+                    ", building = " + building;
         }
     }
 
