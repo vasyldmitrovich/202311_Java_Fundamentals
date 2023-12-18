@@ -3,7 +3,7 @@ package com.softserve.edu05.hw.Task4;
 import java.util.Random;
 import java.util.Scanner;
 
-public class App {
+public class App {//Good all is good
     public static void main(String[] args) {
 
         /*Create a class called Employee with fields: name, department number, salary.

@@ -2,7 +2,7 @@ package com.softserve.edu05.pt.Task3;
 
 import java.util.Random;
 
-public class Main {
+public class Main {//Nice
 
     //Find array maximum
     public static int biggestNum(int[] array){
