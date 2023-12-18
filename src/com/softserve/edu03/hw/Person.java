@@ -30,7 +30,7 @@ public class Person {
 
     public Person(String firstName, String lastName, int birthYear) {
         //Good
-        this.id = nextId++;//authomatical id for readable printing person's info
+        this.id = nextId++;//authomatic id for readable printing person's info
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthYear = birthYear;
