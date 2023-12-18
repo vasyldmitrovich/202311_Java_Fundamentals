@@ -17,7 +17,6 @@ public class Department implements Cloneable{
         return address;
     }
 
-
     public class Address{
         String city;
         String street;
@@ -46,7 +45,7 @@ public class Department implements Cloneable{
             return "Address: " +
                     "city = " + city +
                     ", street = " + street +
-                    ", building=" + building;
+                    ", building= " + building;
         }
     }
 
