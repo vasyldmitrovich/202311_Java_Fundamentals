@@ -10,7 +10,7 @@ public class Range {
     double firstNumber;
     double secondNumber;
     double thirdNumber;
-
+    static Scanner scanner = new Scanner(System.in);
 
     public boolean checkNumbers(double input) {
 
@@ -18,7 +18,6 @@ public class Range {
     }
 
     public void inputNumbers() {
-        Scanner scanner = new Scanner(System.in);
         System.out.print(" Enter first number: ");
         firstNumber = scanner.nextDouble();
         System.out.print(" Enter second number: ");
@@ -31,7 +30,6 @@ public class Range {
         boolean exit = false;
         while (!exit) {
             System.out.println("Select the desired menu\n 1. Input tree numbers \n 2. Check tree numbers belong to the range[-5, 5]\n 3. Exit");
-            Scanner scanner = new Scanner(System.in);
             int menuinput = scanner.nextInt();
             if (menuinput == 1) {
                 inputNumbers();

@@ -22,10 +22,8 @@ public class Faculty {
 
     private int numberOfStudents;
     private Season currentSeason;
-    Scanner scanner = new Scanner(System.in);
+    static Scanner scanner = new Scanner(System.in);
 
-    public Faculty() {
-    }
 
     public void inputInformationAboutTheNumberOfStudents() {
         System.out.print(" Enter number of students: ");
@@ -44,7 +42,6 @@ public class Faculty {
             case "autumn" -> currentSeason = Season.AUTUMN;
             default -> System.out.println("Please enter correct season value");
         }
-        ;
     }
 
     public void outputInformationOfFaculty() {

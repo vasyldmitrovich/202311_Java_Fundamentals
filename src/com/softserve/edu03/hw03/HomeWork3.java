@@ -3,19 +3,14 @@ package com.softserve.edu03.hw03;
 import java.util.Scanner;
 
 public class HomeWork3 {
-
-    double firstSide;
-    double secondSide;
-    double thirdSide;
-    double semiPerimeter;
-    double areaOfTriangle;
-    int firstNumber;
-    int secondNumber;
-    int thirdNumber;
-    int smallestNumber;
     static Scanner sc = new Scanner(System.in);
 
     public void calculateAreaOfATriangle() {
+        double firstSide;
+        double secondSide;
+        double thirdSide;
+        double semiPerimeter;
+        double areaOfTriangle;
         System.out.println("Area of a triangle");
         System.out.println("Input the first side of a triangle  =");
         firstSide = sc.nextDouble();
@@ -31,6 +26,10 @@ public class HomeWork3 {
     }
 
     public void findTheSmallestNumber() {
+        int firstNumber;
+        int secondNumber;
+        int thirdNumber;
+        int smallestNumber;
         System.out.println("find the smallest number");
         System.out.println("Input the first number =");
         firstNumber = sc.nextInt();

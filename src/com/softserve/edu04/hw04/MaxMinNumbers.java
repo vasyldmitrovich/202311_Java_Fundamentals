@@ -9,9 +9,8 @@ public class MaxMinNumbers {
     int secondNumber;
     int thirdNumber;
 
-
+    static Scanner scanner = new Scanner(System.in);
     public void inputNumbers() {
-        Scanner scanner = new Scanner(System.in);
         System.out.print(" Enter first number: ");
         firstNumber = scanner.nextInt();
         System.out.print(" Enter second number: ");
@@ -34,7 +33,6 @@ public class MaxMinNumbers {
         boolean exit = false;
         while (!exit) {
             System.out.println("Select the desired menu\n 1. Input tree numbers \n 2. Check max and min numbers \n 3. Exit");
-            Scanner scanner = new Scanner(System.in);
             int menuinput = scanner.nextInt();
             if (menuinput == 1) {
                 inputNumbers();

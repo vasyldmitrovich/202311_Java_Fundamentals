@@ -3,6 +3,7 @@ package com.softserve.edu04.hw04;
 import java.util.Scanner;
 
 public class HTTPError {
+    static Scanner scanner = new Scanner(System.in);
     public enum HTTP {
         BadRequest(400),//better to use here 400("Bad Request") and the same for other codes
         Unauthorized(401),
@@ -35,7 +36,6 @@ public class HTTPError {
 
     public void detectionError() {
         System.out.print(" Enter code of error: ");
-        Scanner scanner = new Scanner(System.in);
         int code = scanner.nextInt();
         switch ((code)) {
             case 400:
