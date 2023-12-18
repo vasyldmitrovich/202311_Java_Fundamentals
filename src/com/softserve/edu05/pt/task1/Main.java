@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Do not write all in main method, separate to different methods
         String[] countries = {"Ukraine", "France", "USA", "Germany", "Austria"};
         System.out.println(Arrays.toString(countries));
         Arrays.sort(countries);

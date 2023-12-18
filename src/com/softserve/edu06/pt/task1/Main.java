@@ -1,6 +1,6 @@
 package com.softserve.edu06.pt.task1;
 
-public class Main {
+public class Main {//Good
     public static void main(String[] args) {
         System.out.println("The Start of application");
         ClassA a = new ClassA();
