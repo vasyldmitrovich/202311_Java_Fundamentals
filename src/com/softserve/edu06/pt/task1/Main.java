@@ -41,10 +41,12 @@ class ClassA {
         System.out.println("m4 in A");
     }
     void m5() {
-        System.out.println("m5 in A");
+        System.out.println("m5 in B");
     }
 }
 
 class ClassB extends ClassA {
     int m5;
+
+
 }
