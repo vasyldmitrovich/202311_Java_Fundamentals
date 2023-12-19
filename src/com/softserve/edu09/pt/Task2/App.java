@@ -22,8 +22,6 @@ public class App {
         System.out.println("Without duplicates");
         System.out.println(listWithoutDuplicates);
 
-
-
     }
 
 }
