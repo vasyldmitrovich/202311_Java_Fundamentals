@@ -12,15 +12,15 @@ public class App    {
         System.out.println("Collection:");
         print(myCollection);
         newCollection = positionsMoreThan5(myCollection);
+        print(newCollection);
 
-        printWithCause("Positions of elements more then 5", newCollection);
-        printWithCause("Elements more then 20 removed",removePositionsMoreThan20(myCollection));
+        print(removePositionsMoreThan20(myCollection));
+
         setElementsToPositions(myCollection);
+
         myCollection.sort(Integer::compareTo);
-        printWithCause("Sorted final collection",myCollection);
-
-
-
+        System.out.println("Sorted final collection");
+        print(myCollection);
 
     }
 
@@ -38,22 +38,6 @@ public class App    {
 
     }
 
-
-    public static void printWithCause (String cause, List<Integer> collection){
-
-            //Print with additional info
-            System.out.println(cause);
-
-        if(collection.isEmpty()){
-            System.out.println("Collection is empty!");
-        } else {
-            for (var element : collection) {
-                System.out.print(element + " ");
-            }
-            System.out.println();
-        }
-    }
-
     public static List fillCollection (List<Integer> collection){
         Random random = new Random();
         int randomNumber;
@@ -67,6 +51,7 @@ public class App    {
 
     public static List positionsMoreThan5(List<Integer> myCollection){
 
+        System.out.println("Positions of elements more then 5");
         List<Integer> newCollection = new ArrayList<>();
         int position = 0;
         for (var element : myCollection){
@@ -79,6 +64,7 @@ public class App    {
     }
     public static List removePositionsMoreThan20(List<Integer> myCollection){
 
+        System.out.println("Elements more then 20 removed");
         List<Integer> newCollection = new ArrayList<>();
 
         for (var element : myCollection){
