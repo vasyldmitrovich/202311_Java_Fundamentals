@@ -14,7 +14,7 @@ public class App    {
         newCollection = positionsMoreThan5(myCollection);
         print(newCollection);
 
-        print(removePositionsMoreThan20(myCollection));
+        removePositionsMoreThan20(myCollection);
 
         setElementsToPositions(myCollection);
 
@@ -62,7 +62,7 @@ public class App    {
         }
         return newCollection;
     }
-    public static List removePositionsMoreThan20(List<Integer> myCollection){
+    public static void removePositionsMoreThan20(List<Integer> myCollection){
 
         System.out.println("Elements more then 20 removed");
         List<Integer> newCollection = new ArrayList<>();
@@ -72,7 +72,7 @@ public class App    {
                 newCollection.add(element);
             }
         }
-        return newCollection;
+       print( newCollection);
     }
 
     public static void formattedPrint (List<Integer> myCollection){
@@ -86,15 +86,14 @@ public class App    {
         }
     }
 
-    public static List setElementsToPositions (List<Integer> myCollection){
+    public static void setElementsToPositions (List<Integer> myCollection){
 
         System.out.println("Added elements 1,-3,-4 in positions 2, 8, 5.");
         myCollection.set(2,1);
         myCollection.set(5,-4);
         myCollection.set(8,-3);
         formattedPrint(myCollection);
-
-        return myCollection;
+        print(myCollection);
     }
 
 }
