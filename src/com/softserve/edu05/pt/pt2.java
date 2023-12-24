@@ -9,9 +9,9 @@ public class pt2 {
         System.out.print("Enter number:");
         int number = SCANNER.nextInt();
         if (isPrime(number)) {
-            System.out.println("Is number " + number + " is prime");
+            System.out.println("number " + number + " is prime");
         } else {
-            System.out.println("Is number " + number + " is not prime");
+            System.out.println("number " + number + " is not prime");
         }
 
     }
