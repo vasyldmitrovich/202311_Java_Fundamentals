@@ -35,6 +35,23 @@ public class Employee { //Class created for additional info like position, salar
         this.salary = salary;
     }
 
+    public String getPosition() {
+        return position;
+    }
+
+    public void setPosition(String position) {
+        this.position = position;
+    }
+
+    public String getDob() {
+        return dob;
+    }
+
+    public void setDob(String dob) {
+        this.dob = dob;
+    }
+
+
     public static Employee getEmployee(){
 
         Scanner scanner = new Scanner(System.in);

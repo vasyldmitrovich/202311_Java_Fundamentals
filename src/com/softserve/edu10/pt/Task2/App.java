@@ -15,6 +15,8 @@ public class App {
         print(employeeMap);
         getEmployeeByKey(employeeMap);//Ok for practical task 2
         getEmployeeByName(employeeMap);//Refactored from Task 1 for working with class Employee
+        editInfoById(employeeMap);//Third point from task 2
+        sortMapByEnteredCriteria(employeeMap);//Fourth point of task 2(sorting by entered criteria)
 
     }
 
@@ -39,7 +41,7 @@ public class App {
                         key,value);
             }
 
-        } while(map.size() != 7);
+        } while(map.size() != 7);//You can change 7 to 2 for easy testing
 
     }
 
@@ -84,6 +86,60 @@ public class App {
         }
 
     }
+    public static void editInfoById(Map<Integer,Employee> map){
+
+        System.out.println("Enter employee id to edit info: ");
+        int inputId = Integer.parseInt(SCANNER.nextLine());
+
+
+        if (!map.containsKey(inputId)) {
+            System.out.println("No such matches with key " + inputId);
+        } else {
+            Employee employee = map.get(inputId);
+
+            System.out.print("Enter Name: ");
+            String newName = SCANNER.nextLine();
+            employee.setName(newName);
+
+            System.out.print("Enter Position: ");
+            String newPosition = SCANNER.nextLine();
+            employee.setPosition(newPosition);
+
+            System.out.print("Enter Salary: ");
+            double newSalary = Double.parseDouble(SCANNER.nextLine());
+            employee.setSalary(newSalary);
+
+            System.out.print("Enter Date of Birth: ");
+            String newDOB = SCANNER.nextLine();
+            employee.setDob(newDOB);
+
+            System.out.println("Info edited successfully!");
+            System.out.println("New map: ");
+            print(map);
+        }
+
+    }
+    public static void sortMapByEnteredCriteria(Map<Integer,Employee> map){
+
+        List<Map.Entry<Integer,Employee> > newList = new ArrayList<>(map.entrySet());
+
+        System.out.println("Enter criteria for employee sorting(id/name/position) ");
+        String input = SCANNER.nextLine();
+
+        switch (input.toLowerCase(Locale.ROOT)){
+            case "id" -> newList.sort(Comparator.comparingInt(Map.Entry::getKey));
+            case "name"-> newList.sort(Comparator.comparing(entry -> entry.getValue().getName()));
+            case "position"-> newList.sort(Comparator.comparing( entry-> entry.getValue().getPosition() ));
+            default -> System.out.println("Invalid sorting criterion.");
+        }
+        System.out.println("Sorted Employee Map Contents:");
+        for (Map.Entry<Integer, Employee> entry : newList) {
+            System.out.println(entry.getValue());
+        }
+
+    }
+
+
 }
 
 
