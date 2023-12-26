@@ -14,20 +14,20 @@ public class App {
         fillMapManually(employeeMap);//Task 2 1st point
         print(employeeMap);
         getEmployeeByKey(employeeMap);//Ok for practical task 2
+        getEmployeeByName(employeeMap);//Refactored from Task 1 for working with class Employee
+
     }
 
-    public static Map<Integer,Employee> fillMapManually(Map<Integer,Employee> map){
+    public static void fillMapManually(Map<Integer,Employee> map){
 
         //Task 2 1st point method
-        Scanner scanner = new Scanner(System.in);
-
         int key;
         int counter = 1;
         Employee value;
 
         do {
             System.out.printf("Enter %d employee key:\n",counter);
-            key = Integer.parseInt(scanner.nextLine());
+            key = Integer.parseInt(SCANNER.nextLine());
             System.out.printf("Enter %d employee info:\n",counter);
             value = Employee.getEmployee();
 
@@ -39,9 +39,8 @@ public class App {
                         key,value);
             }
 
-        } while(map.size()!= 2);
+        } while(map.size() != 7);
 
-        return map;
     }
 
 
@@ -62,9 +61,31 @@ public class App {
         } else {
             System.out.printf("Employee with key %d found : \n%s\n", key, map.get(key));
         }
-    }
 
     }
+    public static void getEmployeeByName(Map<Integer,Employee> map){
+
+        System.out.println("Enter employee name to find: ");
+        String name = SCANNER.nextLine();
+        boolean found = false;
+
+        for (var entry : map.entrySet()){
+                Employee employee = entry.getValue();
+
+                if(employee.getName().equals(name)){
+                    System.out.printf("Employee with name %s found at %d position\n",name, entry.getKey());
+                    System.out.println(employee.toString());
+                    found = true;
+                    break;
+                }
+            }
+        if(!found){
+            System.out.printf("No such matches with name %s",name);
+        }
+
+    }
+}
+
 
 
 

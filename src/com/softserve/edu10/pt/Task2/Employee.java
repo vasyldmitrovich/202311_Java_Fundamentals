@@ -1,5 +1,6 @@
 package com.softserve.edu10.pt.Task2;
 
+import java.util.Map;
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -9,10 +10,6 @@ public class Employee { //Class created for additional info like position, salar
     private String position;
     private double salary;
     private String dob;
-
-    public Employee() {
-
-    }
 
     public Employee(String name, String position, double salary, String dob) {
         this.name = name;
@@ -30,28 +27,12 @@ public class Employee { //Class created for additional info like position, salar
         this.name = name;
     }
 
-    public String getPosition() {
-        return position;
-    }
-
-    public void setPosition(String position) {
-        this.position = position;
-    }
-
     public double getSalary() {
         return salary;
     }
 
     public void setSalary(double salary) {
         this.salary = salary;
-    }
-
-    public String getDob() {
-        return dob;
-    }
-
-    public void setDob(String dob) {
-        this.dob = dob;
     }
 
     public static Employee getEmployee(){
@@ -72,6 +53,8 @@ public class Employee { //Class created for additional info like position, salar
 
         return new Employee(name, position, salary, dob);
     }
+
+
 
     @Override
     public String toString() {
