@@ -1,9 +1,6 @@
 package com.softserve.edu10.pt.Task1;
 
-import com.softserve.edu05.pt.Task4.Employee;
-
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 import java.util.Scanner;
 
