@@ -137,7 +137,11 @@ abstract class Employee implements Comparable<Employee> {
 
     @Override
     public int compareTo(Employee employee) {
-        return -( (int)monthlyRemuneration - (int)employee.monthlyRemuneration );
+        int comp = Double.compare(employee.monthlyRemuneration, monthlyRemuneration);
+        if( comp == 0 ) {
+            comp = name.compareTo(employee.name);
+        }
+        return comp;
     }
 }
 
