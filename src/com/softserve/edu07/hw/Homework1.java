@@ -145,7 +145,7 @@ abstract class Employee implements Comparable<Employee> {
     }
 }
 
-class SalariedEmployee extends Employee implements Payment {
+class SalariedEmployee extends Employee implements Payment {//Interphase Payment should implement class Employee
     DecimalFormat df = new DecimalFormat("0");
     private String socialSecurityNumber;
     private double monthlySalary;

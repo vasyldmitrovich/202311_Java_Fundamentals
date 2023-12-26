@@ -6,7 +6,7 @@ public class Homework2 {
     public static final Scanner SCANNER = new Scanner( System.in );
 
     public static void main(String[] args) {
-        String jaNicht = "N";
+        String jaNicht = "N";//You have this variable and do not use it
         do {
             System.out.println("User, we ask you to enter below to positive integers.");
 

@@ -59,7 +59,7 @@ public class Task4 {
     }
 }
 
-class Employee {
+class Employee {//Move to Employee.java do not do inner
     private String name;
     private int departmentNumber;
     private double salary;

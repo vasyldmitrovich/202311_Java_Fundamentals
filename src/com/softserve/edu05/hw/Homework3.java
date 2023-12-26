@@ -55,7 +55,7 @@ public class Homework3 {
     }
 }
 
-class Car {
+class Car {//Do not do inner class move to file Car.java
     private String make;
     private int year;
     private int engine;

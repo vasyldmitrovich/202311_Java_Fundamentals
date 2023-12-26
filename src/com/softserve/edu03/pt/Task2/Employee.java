@@ -56,6 +56,7 @@ public class Employee {
         System.out.println(); // just an empty line to please the eye
     }
 
+    //Getters and Setters should go after constructors
     public String getName() {
         return name;
     }
