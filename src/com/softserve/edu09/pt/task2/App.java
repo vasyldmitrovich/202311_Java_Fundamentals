@@ -9,22 +9,21 @@ public class App {
         System.out.println("Enter the line of numbers with coma");
         String lineNumbers = scanner.nextLine();
         String[] arr = lineNumbers.split(",");
-        ArrayList <String> noDuplicateArr = new ArrayList<>();
-        for (var ar:arr) {
+        ArrayList<String> noDuplicateArr = new ArrayList<>();
+        for (var ar : arr) {
             boolean founded = false;
-            for (var n:noDuplicateArr) {
+            for (var n : noDuplicateArr) {
                 if (ar.equals(n)) {
-                   founded = true;
-                   break;
+                    founded = true;
+                    break;
                 }
             }
-            if (!founded){
+            if (!founded) {
                 noDuplicateArr.add(ar);
             }
         }
         String str = String.join(",", noDuplicateArr);
         System.out.println(str);
-
 
 
     }
