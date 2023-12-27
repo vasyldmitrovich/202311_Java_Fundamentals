@@ -67,7 +67,7 @@ public class Student {
             for (var n : curGrades.entrySet()) {
                 sumGrades += n.getValue();
             }
-            double average = curGrades.size() == 0 ? 0 : sumGrades / curGrades.size();
+            double average = curGrades.isEmpty() ? 0 : sumGrades / curGrades.size();
             if (average < 3) {
                 iterator.remove();
             } else {
