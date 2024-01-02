@@ -20,6 +20,7 @@ public class Homework1_T3 {
 
         // calculate how many instances of +/- combinations there are in the list.
         // Counter is the variable that counts such combinations
+        //Move this logic to some method and call this method here
         int counter = 0;
         for (int i = 1; i < myCollection.size(); i++) {
             if( myCollection.get(i-1) < 0 && myCollection.get(i) >= 0 ) {

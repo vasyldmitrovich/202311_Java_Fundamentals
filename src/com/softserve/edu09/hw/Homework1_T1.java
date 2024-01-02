@@ -15,6 +15,7 @@ public class Homework1_T1 {
         }
 
         // Swap the maximum and minimum elements in the list.
+        //Move this code to some method and call this method here
         int minValue = myCollection.get(0);
         int minIndex = 0;
         int maxValue = myCollection.get(0);
