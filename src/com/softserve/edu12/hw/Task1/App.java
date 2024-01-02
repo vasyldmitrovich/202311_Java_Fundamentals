@@ -1,5 +1,5 @@
 package com.softserve.edu12.hw.Task1;
-;
+
 import java.util.Scanner;
 
 public class App {
