@@ -2,7 +2,7 @@ package com.softserve.edu08.hw.task1_2;
 
 import com.softserve.edu08.pt.Department;
 
-public class Student extends Person implements Cloneable {
+public class Student extends Person implements Cloneable {//Do not need implements Cloneable because parent class already implements this interphase
     private int course;
 
     public Student(int age, FullName fullName, int course) {
