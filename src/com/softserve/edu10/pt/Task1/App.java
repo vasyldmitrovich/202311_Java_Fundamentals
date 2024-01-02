@@ -18,8 +18,8 @@ public class App {
         employeeMap.put(7,"Gregor");
 
         print(employeeMap);
-        getEmployeeByKey(employeeMap);
-        getEmployeeByName(employeeMap);
+        getEmployeeByKey(employeeMap);//Nice
+        getEmployeeByName(employeeMap);//Ok
     }
 
     public static void print(Map <Integer,String> map){

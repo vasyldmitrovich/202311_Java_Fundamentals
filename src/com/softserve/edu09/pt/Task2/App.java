@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Good
         List<Integer> numbersList = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
 

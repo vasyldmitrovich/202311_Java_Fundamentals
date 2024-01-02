@@ -12,13 +12,13 @@ public class App {
         System.out.println("Input last name");
         String lastName =SCANNER.nextLine();
 
-        System.out.printf("%C%s %C %C %n",lastName.charAt(0),lastName.substring(1),firstName.charAt(0),middleName.charAt(0));
+        System.out.printf("%C%s %C %C %n",lastName.charAt(0),lastName.substring(1),firstName.charAt(0),middleName.charAt(0));//Nice
         //It always will be in capital case
         System.out.printf("%C%s %n",lastName.charAt(0),lastName.substring(1));
         //It always will be in capital case
         System.out.printf("%C%s %C%s %C%s %n",firstName.charAt(0),firstName.substring(1),
                 middleName.charAt(0),middleName.substring(1),
-                lastName.charAt(0),lastName.substring(1));
+                lastName.charAt(0),lastName.substring(1));//Good
         //It always will be in capital case
 
 

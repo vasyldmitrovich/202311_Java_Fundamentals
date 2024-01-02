@@ -8,7 +8,7 @@ public class App {
     public static final Scanner SCANNER = new Scanner(System.in);
     public static void main(String[] args) {
 
-        Pattern pattern = Pattern.compile("^[\\w]{3,15}$");
+        Pattern pattern = Pattern.compile("^[\\w]{3,15}$");//Very nice
         String input;
 
         for (int i = 0; i < 5 ; i++) {

@@ -6,7 +6,7 @@ public abstract class Employee implements Payment{
     protected String employeeId;
 
     public Employee() {
-        this.employeeId = "E " + nextEmployeeId++;//authomatic id for each employee
+        this.employeeId = "E " + nextEmployeeId++;//automatic id for each employee
     }
 
     @Override

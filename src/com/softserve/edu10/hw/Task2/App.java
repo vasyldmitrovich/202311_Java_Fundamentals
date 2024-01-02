@@ -3,7 +3,7 @@ package com.softserve.edu10.hw.Task2;
 import java.util.*;
 
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Ok
 
         Map <String,String> personMap = new LinkedHashMap<>();
 
