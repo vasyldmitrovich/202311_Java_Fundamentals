@@ -2,7 +2,7 @@ package com.softserve.edu08.hw.Task1;
 
     public class FullName {
 
-    protected String firstName;
+    protected String firstName;//Make privet fields
     protected String lastName;
 
     public FullName(String firstName, String lastName) {

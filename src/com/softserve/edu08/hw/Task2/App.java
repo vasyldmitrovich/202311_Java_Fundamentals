@@ -3,7 +3,7 @@ package com.softserve.edu08.hw.Task2;
 import com.softserve.edu08.hw.Task1.FullName;
 import com.softserve.edu08.hw.Task1.Person;
 
-public class App{
+public class App{//Ok
     public static void main(String[] args) throws CloneNotSupportedException {
 
         Student firstStudent = new Student(new FullName("Jora","Revazov"),19,2);

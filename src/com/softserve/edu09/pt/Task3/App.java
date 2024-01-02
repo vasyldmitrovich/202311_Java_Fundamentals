@@ -7,7 +7,7 @@ public class App    {
     public static void main(String[] args)  {
         List<Integer> myCollection = new ArrayList<>();
         List<Integer> newCollection = new ArrayList<>();
-
+        //Nice
         fillCollection(myCollection);//Fill list with random numbers
         System.out.println("Collection:");
         print(myCollection);
@@ -19,7 +19,7 @@ public class App    {
         setElementsToPositions(myCollection);
 
         myCollection.sort(Integer::compareTo);
-        System.out.println("Sorted final collection");
+        System.out.println("Sorted final collection");//Good
         print(myCollection);
 
     }

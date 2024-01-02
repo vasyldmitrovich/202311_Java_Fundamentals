@@ -1,7 +1,7 @@
 package com.softserve.edu07.pt.Task1;
 
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Good
 
         Animal[] animals = new Animal[]{
 

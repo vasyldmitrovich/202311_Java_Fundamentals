@@ -1,7 +1,7 @@
 package com.softserve.edu11.pt.Task1;
 
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Good
         String str1 = "SoftServe Academy";
         String str2 = "SoftServe";
         String str3 = "Academy";//for additional checking

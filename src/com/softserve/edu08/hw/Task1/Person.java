@@ -4,7 +4,7 @@ import com.softserve.edu08.hw.Task2.Student;
 
 public abstract class Person  {
 
-    protected FullName fullName;
+    protected FullName fullName;//Do fields private
     protected int age;
 
     public Person (FullName fullName, int age) {

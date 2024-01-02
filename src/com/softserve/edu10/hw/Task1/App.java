@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Good
         Set<String> set1 = new HashSet<>();
         set1.add("Dog");
         set1.add("Cat");

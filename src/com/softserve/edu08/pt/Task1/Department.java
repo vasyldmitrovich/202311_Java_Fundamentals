@@ -50,7 +50,7 @@ public class Department implements Cloneable{
     }
 
     @Override
-    protected Object clone() throws CloneNotSupportedException {
+    protected Object clone() throws CloneNotSupportedException {//Good
         Department clone = (Department) super.clone();
         clone.address = new Address(this.address.getCity(), this.address.getStreet(), this.address.getBuilding());
         return clone;

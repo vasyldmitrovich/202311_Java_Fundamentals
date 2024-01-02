@@ -21,7 +21,7 @@ public class Student {
     }
 
 
-    public static void printStudents(List<Student> studentsList, int currentCourse) {
+    public static void printStudents(List<Student> studentsList, int currentCourse) {//Methods like that should be not here, should be in App.java class
 
         Iterator<Student> iterator = studentsList.iterator();
         boolean found = false;
@@ -44,6 +44,8 @@ public class Student {
 //        }
 
     }
+
+    //And next two methods too
     public static void print(List<Student> studentsList){
         Iterator <Student> iterator = studentsList.iterator();
 
@@ -52,6 +54,7 @@ public class Student {
             System.out.println(student.toString());
         }
     }
+
     public static void sortedPrint(List<Student> studentsList, String input){
 
         switch (input.toLowerCase(Locale.ROOT)){
