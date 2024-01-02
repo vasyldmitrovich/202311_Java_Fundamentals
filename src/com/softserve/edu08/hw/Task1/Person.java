@@ -4,8 +4,8 @@ import com.softserve.edu08.hw.Task2.Student;
 
 public abstract class Person  {
 
-    protected FullName fullName;//Do fields private
-    protected int age;
+    private FullName fullName;//Do fields private
+    private int age;
 
     public Person (FullName fullName, int age) {
         this.fullName = fullName;

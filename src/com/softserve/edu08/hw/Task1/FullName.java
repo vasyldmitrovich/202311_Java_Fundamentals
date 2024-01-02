@@ -2,8 +2,8 @@ package com.softserve.edu08.hw.Task1;
 
     public class FullName {
 
-    protected String firstName;//Make privet fields
-    protected String lastName;
+    private String firstName;//Make privet fields
+    private String lastName;
 
     public FullName(String firstName, String lastName) {
         this.firstName = firstName;
