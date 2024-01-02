@@ -5,7 +5,7 @@ import com.softserve.edu07.pt.task1.Cat;
 import com.softserve.edu07.pt.task1.Dog;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Good
         Animal[] animals = {
                 new Cat(),
                 new Dog(),

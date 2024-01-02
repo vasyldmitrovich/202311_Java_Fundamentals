@@ -1,6 +1,6 @@
 package com.softserve.edu07.hw.task1;
 
-public class SalariedEmployee extends Employee implements Payment{
+public class SalariedEmployee extends Employee implements Payment{//Do not need implements interphase here because parent class already implement this interphase
     private String socialSecurityNumber;
     private double monthlySalary;
 
