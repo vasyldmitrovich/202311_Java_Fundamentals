@@ -2,7 +2,7 @@ package com.softserve.edu05.pt05;
 
 import java.util.Scanner;
 
-public class EmployeeMenu {
+public class EmployeeMenu {//Good
     private static final Scanner SCANNER = new Scanner(System.in);
 
     public static void main(String[] args) {

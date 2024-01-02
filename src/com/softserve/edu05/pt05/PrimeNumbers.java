@@ -2,7 +2,7 @@ package com.softserve.edu05.pt05;
 
 import java.util.Scanner;
 
-public class PrimeNumbers {
+public class PrimeNumbers {//Good
     private static final Scanner SCANNER = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -17,7 +17,7 @@ public class PrimeNumbers {
 
     }
 
-    public static boolean isPrime(int number) {
+    public static boolean isPrime(int number) {//good
         if (number < 0) {
             number = -number;
         }

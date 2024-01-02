@@ -54,6 +54,7 @@ public class CalculationOfNumbers {
     }
 
     public static void main(String[] args) {
+        //Nice to see that you use separate methods. Very good decision
         outputInformation();
     }
 
