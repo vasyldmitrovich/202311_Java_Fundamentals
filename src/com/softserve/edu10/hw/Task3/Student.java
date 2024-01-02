@@ -20,50 +20,6 @@ public class Student {
         return course;
     }
 
-
-    public static void printStudents(List<Student> studentsList, int currentCourse) {//Methods like that should be not here, should be in App.java class
-
-        Iterator<Student> iterator = studentsList.iterator();
-        boolean found = false;
-
-        while (iterator.hasNext()){
-            Student student = iterator.next();
-
-            if(student.course == currentCourse){
-                System.out.println(student.toString());
-                found = true;
-            }
-        }
-        if(!found){
-            System.out.printf("Students from %d course not found",currentCourse);
-        }
-//        for (var student : studentsList){
-//            if(student.getCourse() == currentCourse){
-//                System.out.println(student.toString());
-//            }//another method without iterator
-//        }
-
-    }
-
-    //And next two methods too
-    public static void print(List<Student> studentsList){
-        Iterator <Student> iterator = studentsList.iterator();
-
-        while(iterator.hasNext()){
-            Student student = iterator.next();
-            System.out.println(student.toString());
-        }
-    }
-
-    public static void sortedPrint(List<Student> studentsList, String input){
-
-        switch (input.toLowerCase(Locale.ROOT)){
-            case "name" -> studentsList.sort(compareByName());
-            case "course" -> studentsList.sort(compareByCourse());
-        }
-
-    }
-
     @Override
     public String toString() {
         return "Name = " + name +
