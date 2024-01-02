@@ -2,11 +2,11 @@ package com.softserve.edu07.hw.Task1;
 
 public class ContractEmployee extends Employee {//Good
 
-    protected String name;//If you do not need to have access to these fields from child, do fields private
-    protected double rate;
-    protected int hours;
-    protected double salary;
-    protected String federalTaxIdMember;
+    private String name;//If you do not need to have access to these fields from child, do fields private
+    private double rate;
+    private int hours;
+    private double salary;
+    private String federalTaxIdMember;
 
     protected double averageSalary;
 
