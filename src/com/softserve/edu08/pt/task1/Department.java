@@ -1,12 +1,12 @@
 package com.softserve.edu08.pt.task1;
 
-public class Department {
+public class Department implements Cloneable{
     private String name;
     private Address address;
 
-    public Department(String name, Address address) {
+    public Department(String name, String city, String street, int building) {
         this.name = name;
-        this.address = address;
+        this.address = new Address(city, street, building);
     }
 
     public String getName() {
@@ -17,23 +17,15 @@ public class Department {
         return address;
     }
 
-    @Override
-    public String toString() {
-        return "Department{" +
-                "name='" + name + '\'' +
-                ", address=" + address +
-                '}';
-    }
-
     static class Address {
-        private String city;
-        private String street;
-        private int houseNumber;
+        String city;
+        String street;
+        int building;
 
-        public Address(String city, String street, int houseNumber) {
+        public Address(String city, String street, int building) {
             this.city = city;
             this.street = street;
-            this.houseNumber = houseNumber;
+            this.building = building;
         }
 
         public String getCity() {
@@ -44,8 +36,8 @@ public class Department {
             return street;
         }
 
-        public int getHouseNumber() {
-            return houseNumber;
+        public int getBuilding() {
+            return building;
         }
 
         @Override
@@ -53,8 +45,15 @@ public class Department {
             return "Address{" +
                     "city='" + city + '\'' +
                     ", street='" + street + '\'' +
-                    ", houseNumber=" + houseNumber +
+                    ", building=" + building +
                     '}';
         }
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        Department clone = (Department) super.clone();
+        clone.address = new Address(this.address.getCity(), this.address.getStreet(), this.address.getBuilding());
+        return clone;
     }
 }

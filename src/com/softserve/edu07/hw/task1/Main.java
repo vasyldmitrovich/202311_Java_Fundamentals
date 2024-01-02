@@ -14,8 +14,8 @@ public class Main {
         Arrays.sort(employees, (e1, e2) -> Double.compare(e2.calculatePay(), e1.calculatePay()));
 
         for (var employee : employees) {
-            System.out.println("ID: " + ((Employee) employee).employeeId +
-                    ", Name: " + employee.name +
+            System.out.println("ID: " + ((Employee) employee).getEmployeeId() +
+                    ", Name: " + employee.getName() +
                     ", Salary: " + employee.calculatePay());
         }
     }

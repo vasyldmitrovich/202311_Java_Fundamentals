@@ -1,17 +1,20 @@
 package com.softserve.edu08.pt.task1;
 
-import java.util.Arrays;
-import java.util.Random;
-
 public class Main {
-    public static void main(String[] args) {
-        int[] x = new int[10];
-        Random random = new Random();
-        for (int i = 0; i < x.length; i++) {
-            x[i] = random.nextInt(10);
+    public static void main(String[] args) throws CloneNotSupportedException {
+        Department department1 = new Department("IT", "Lviv","Sadova",2);
+        Department cloneDep = (Department) department1.clone();
+
+        cloneDep.getAddress().city= "Kyiv";
+
+        Department[] array = new Department[]{
+                department1,cloneDep
+        };
+
+        for (var element: array ){
+
+            System.out.print(element.getName() + " ");
+            System.out.println(element.getAddress());
         }
-        System.out.println(Arrays.toString(x));
-        Arrays.sort(x);
-        System.out.println(Arrays.toString(x));
     }
 }
