@@ -42,7 +42,7 @@ public class App {
         System.out.println(myCollection);
     }
 
-    public static void addRandomBeforeFirstNegative(List<Integer> myCollection) {
+    public static void addRandomBeforeFirstNegative(List<Integer> myCollection) {//Good
         Random rand = new Random();
 
         for (int mc:myCollection) {
@@ -82,7 +82,7 @@ public class App {
         System.out.println(list2);
     }
 
-    public static void remuveLastEven(List<Integer> myCollection) {
+    public static void remuveLastEven(List<Integer> myCollection) {//Maybe name method should have named removeLastEvent
         int curEven = -1;
         for (var el:myCollection){
             if (el%2 == 0) {

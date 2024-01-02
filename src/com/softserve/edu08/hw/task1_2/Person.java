@@ -2,7 +2,7 @@ package com.softserve.edu08.hw.task1_2;
 
 public abstract class Person implements Cloneable {
     private int age;
-    FullName fullName;
+    FullName fullName;//Do this field private
 
     public Person(int age, FullName fullName) {
         this.age = age;

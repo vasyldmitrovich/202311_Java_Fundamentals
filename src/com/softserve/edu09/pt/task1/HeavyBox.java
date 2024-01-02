@@ -20,7 +20,7 @@ public class HeavyBox {
         this.content = content;
     }
 
-    public HeavyBox(int weight, String content) {
+    public HeavyBox(int weight, String content) {//Constructors should go before getters and setters
         this.weight = weight;
         this.content = content;
     }
