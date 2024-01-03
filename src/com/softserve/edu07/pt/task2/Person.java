@@ -11,5 +11,5 @@ public abstract class Person {
         this.name = name;
     }
 
-    abstract void print();
+    protected abstract void print();
 }
