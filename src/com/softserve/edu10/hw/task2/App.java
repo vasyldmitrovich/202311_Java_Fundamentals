@@ -27,11 +27,11 @@ public class App {
     }
 
     public static void findDoubleFirstname(HashMap<String, String> personMap) {
-        HashSet setDoubleFirstname = new HashSet<>();
+        HashSet<String> setDoubleFirstname = new HashSet<>();
         boolean founded = false;
         for (String v : personMap.values()) {
             int count = Collections.frequency(personMap.values(), v);
-            if ((count > 1) & (setDoubleFirstname.contains(v) == false)) {
+            if ((count > 1) & (!setDoubleFirstname.contains(v))) {
                 founded = true;
                 setDoubleFirstname.add(v);
             }
@@ -43,12 +43,14 @@ public class App {
         }
     }
 
-    public static void  removeForName(String firstName, HashMap<String,String> personMap) {
-        ArrayList<String> arr = new ArrayList();
-        for(var v:personMap.entrySet()){
-            if (v.getValue().equals(firstName)){arr.add(v.getKey());}
+    public static void removeForName(String firstName, HashMap<String, String> personMap) {
+        ArrayList<String> arr = new ArrayList<>();
+        for (var v : personMap.entrySet()) {
+            if (v.getValue().equals(firstName)) {
+                arr.add(v.getKey());
+            }
         }
-        for(var a:arr){
+        for (var a : arr) {
             personMap.remove(a);
         }
         for (Map.Entry<String, String> entry : personMap.entrySet()) {

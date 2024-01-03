@@ -1,7 +1,6 @@
 package com.softserve.edu10.hw.task1;
 
 import java.util.HashSet;
-import java.util.Set;
 
 public class App {
     public static void main(String[] args) {
@@ -19,11 +18,11 @@ public class App {
         set2.add(8);
         set2.add(10);
 
-        for (var us:union(set1,set2)){
+        for (var us : union(set1, set2)) {
             System.out.println(us);
         }
         System.out.println("=========================================");
-        for (var us:intersect(set1,set2)){
+        for (var us : intersect(set1, set2)) {
             System.out.println(us);
         }
 
