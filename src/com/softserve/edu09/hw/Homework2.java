@@ -108,7 +108,7 @@ public class Homework2 {
     }
 }
 
-class Student {
+class Student {//Move to file Student.java
     private String name;
     private int course;
     private int group;
@@ -121,6 +121,7 @@ class Student {
         this.grades = grades;
     }
 
+    //Write override method after getters and setters
     @Override
     public String toString() {
         return "Student{" +

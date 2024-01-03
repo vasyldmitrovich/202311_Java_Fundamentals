@@ -45,8 +45,8 @@ public class Task1 {
 
 }
 
-class HeavyBox {
-    int weight;
+class HeavyBox {//Move to file HeavyBox.java
+    int weight;//Make fields private
     String content;
 
     public HeavyBox(int weight, String content) {
