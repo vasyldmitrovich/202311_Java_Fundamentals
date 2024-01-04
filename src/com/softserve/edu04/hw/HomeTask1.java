@@ -1,6 +1,5 @@
 package com.softserve.edu04.hw;
-
-import static com.softserve.edu04.hw.App.SCANNER;
+import static com.softserve.edu03.hw.App.SCANNER;
 
 public class HomeTask1 {
     public static void run() {

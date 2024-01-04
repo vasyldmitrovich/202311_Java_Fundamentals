@@ -1,5 +1,4 @@
 package com.softserve.edu03.hw;
-
 import com.softserve.edu03.hw.HomeTask3.HomeTask3;
 
 import java.util.Scanner;
