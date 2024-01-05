@@ -1,4 +1,4 @@
-package edu11.pt;
+package com.softserve.edu11.pt;
 
 import java.util.ArrayList;
 import java.util.List;

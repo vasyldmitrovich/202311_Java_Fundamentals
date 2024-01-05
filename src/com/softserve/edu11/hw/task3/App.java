@@ -1,4 +1,4 @@
-package edu11.hw.task3;
+package com.softserve.edu11.hw.task3;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;

@@ -1,4 +1,4 @@
-package edu11.hw.task4;
+package com.softserve.edu11.hw.task4;
 
 import java.util.ArrayList;
 import java.util.List;
