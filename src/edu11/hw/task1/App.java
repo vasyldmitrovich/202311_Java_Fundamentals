@@ -1,6 +1,5 @@
 package edu11.hw.task1;
 
-import java.util.Collections;
 import java.util.Scanner;
 
 public class App {
@@ -17,6 +16,6 @@ public class App {
         }
         System.out.println("The longest word is: " + maxLengs);
         System.out.println("Number the letters in the longest word is: " + maxLengs.length());
-        System.out.println(new StringBuffer(arr[1]).reverse().toString());
+        System.out.println(new StringBuffer(arr[1]).reverse());
     }
 }
