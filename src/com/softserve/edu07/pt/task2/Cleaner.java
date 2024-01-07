@@ -3,7 +3,7 @@ package com.softserve.edu07.pt.task2;
 public class Cleaner extends Staff{
 
     @Override
-    void print() {
+    protected void print() {
         super.print();
     }
 
