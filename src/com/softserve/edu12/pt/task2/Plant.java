@@ -38,37 +38,25 @@ public class Plant {
     }
 
     private Color colorStrToEnum(String color) throws ColorException {
-        switch (color.toLowerCase()) {
-            case "blue":
-                return Color.BLUE;
-            case "red":
-                return Color.RED;
-            case "white":
-                return Color.WHITE;
-            case "yellow":
-                return Color.YELLOW;
-            case "green":
-                return Color.GREEN;
-            default:
-                throw new ColorException("This color does not exist. Choose another color!");
-        }
+        return switch (color.toLowerCase()) {
+            case "blue" -> Color.BLUE;
+            case "red" -> Color.RED;
+            case "white" -> Color.WHITE;
+            case "yellow" -> Color.YELLOW;
+            case "green" -> Color.GREEN;
+            default -> throw new ColorException("This color does not exist. Choose another color!");
+        };
     }
 
     private Type typeStrToEnum(String type) throws TypeException {
-        switch (type.toUpperCase()) {
-            case "HERB":
-                return Type.HERB;
-            case "CLIMBER":
-                return Type.CLIMBER;
-            case "CREEPER":
-                return Type.CREEPER;
-            case "TREE":
-                return Type.TREE;
-            case "SHRUB":
-                return Type.SHRUB;
-            default:
-                throw new TypeException("Coose only HERB, CLIMBER, TREE, CREEPER or SHRUB!");
-        }
+        return switch (type.toUpperCase()) {
+            case "HERB" -> Type.HERB;
+            case "CLIMBER" -> Type.CLIMBER;
+            case "CREEPER" -> Type.CREEPER;
+            case "TREE" -> Type.TREE;
+            case "SHRUB" -> Type.SHRUB;
+            default -> throw new TypeException("Choose only HERB, CLIMBER, TREE, CREEPER or SHRUB!");
+        };
 
     }
 
