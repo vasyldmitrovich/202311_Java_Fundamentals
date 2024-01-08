@@ -25,7 +25,7 @@ public class App {
         System.out.println("===========================================================");
 
         List<Product> sortedList = products.stream()
-                                   .filter(t -> t.getCategory() == "phone")
+                                   .filter(t -> t.getCategory().equals("phone"))
                                    .filter(t -> t.getPrice() > 3000)
                                    .filter(t -> t.getDateOfProduct().isBefore(LocalDate.now().minusYears(1)))
                                    .sorted(Product::compareToWithPrise).toList();
