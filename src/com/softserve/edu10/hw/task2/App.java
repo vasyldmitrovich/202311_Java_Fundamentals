@@ -20,7 +20,7 @@ public class App {
             System.out.println(entry.getKey() + " " + entry.getValue());
         }
         System.out.println("======================================");
-        findDoubleFirstname(personMap);
+        findDoubleFirstname(personMap);//Good
         System.out.println("======================================");
         removeForName("Orest", personMap);
 

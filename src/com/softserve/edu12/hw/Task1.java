@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Task1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        //Nice
         try {
             System.out.println("Enter the first number:");
             double a = Double.parseDouble(scanner.nextLine());

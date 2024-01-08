@@ -3,7 +3,7 @@ package com.softserve.edu10.hw.task1;
 import java.util.HashSet;
 
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Good
 
         HashSet<Integer> set1 = new HashSet<>();
         set1.add(1);

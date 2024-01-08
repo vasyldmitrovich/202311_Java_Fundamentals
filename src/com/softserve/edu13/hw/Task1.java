@@ -1,6 +1,6 @@
 package com.softserve.edu13.hw;
 
-public class Task1 {
+public class Task1 {//Nice
     public static void main(String[] args) {
         System.out.println(encrypt("wxy", 3));
         System.out.println(decrypt("abc", 4));

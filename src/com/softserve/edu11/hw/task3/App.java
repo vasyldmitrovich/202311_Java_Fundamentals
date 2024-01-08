@@ -10,7 +10,7 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the sentence that contains containing several instances of US currency format: ");
         String sentence = scanner.nextLine();
-        Pattern p = Pattern.compile("[$]\\d*.\\d{2}");
+        Pattern p = Pattern.compile("[$]\\d*.\\d{2}");//Good
         Matcher matcher = p.matcher(sentence);
         while (matcher.find()) {
             System.out.println(sentence.substring(matcher.start(), matcher.end()));
