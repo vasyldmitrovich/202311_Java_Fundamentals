@@ -1,6 +1,5 @@
 package com.softserve.edu13.hw;
 
-import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.GregorianCalendar;
 import java.util.Scanner;
@@ -8,7 +7,6 @@ import java.util.Scanner;
 public class Task3 {
     public static void main(String[] args) {
 
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the year with number yyyy: ");
         int inputYear = Integer.parseInt(scanner.nextLine());

@@ -1,10 +1,7 @@
 package com.softserve.edu13.hw;
 
-import javax.swing.text.DateFormatter;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
 import java.util.Scanner;
 
 public class Task2 {
