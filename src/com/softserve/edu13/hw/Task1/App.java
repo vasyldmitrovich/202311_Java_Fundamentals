@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.function.Function;
 
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Ok
 
         Scanner scanner = new Scanner(System.in);
         int defaultShift = 3;

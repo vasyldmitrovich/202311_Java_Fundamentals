@@ -24,7 +24,7 @@ public class App {
         }
 
     }
-    private static double div(double firstNumber, double secondNumber){
+    private static double div(double firstNumber, double secondNumber){//Good
 
         if(secondNumber == 0){
             throw new ArithmeticException("Division by 0");

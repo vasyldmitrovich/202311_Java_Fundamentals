@@ -31,7 +31,7 @@ public class App {
         sortProducts(products);
     }
 
-    private static void sortProducts(List<Product> products){
+    private static void sortProducts(List<Product> products){//Good
 
          products.stream().
                 filter(item -> item.getManufactureCategory().equals("Phone")).
