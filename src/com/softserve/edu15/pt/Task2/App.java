@@ -1,6 +1,6 @@
 package com.softserve.edu15.pt.Task2;
 
-public class App extends Thread {
+public class App {
     public static void main(String[] args) throws InterruptedException {
 
         Run1 t1 = new Run1();
