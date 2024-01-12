@@ -24,8 +24,6 @@ public class App {
        mostPopular.ifPresent(name -> {
            System.out.println("Most popular name : " + name);
        });
-
-
     }
     static Optional<String> mostPopularName(Stream< Employee> employees) {
 
