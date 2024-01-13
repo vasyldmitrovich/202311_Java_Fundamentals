@@ -36,6 +36,7 @@ public class App {
             }
         }
         );
+
         System.out.println("Before start :");
         System.out.println("t1 : " + t1.getState());
         System.out.println("t2 : " + t2.getState());
