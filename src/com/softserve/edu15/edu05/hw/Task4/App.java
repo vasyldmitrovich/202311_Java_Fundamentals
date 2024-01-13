@@ -1,4 +1,4 @@
-package com.softserve.edu05.hw.Task4;
+package com.softserve.edu15.edu05.hw.Task4;
 
 import java.util.Random;
 import java.util.Scanner;

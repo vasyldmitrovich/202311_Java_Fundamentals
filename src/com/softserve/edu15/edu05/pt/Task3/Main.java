@@ -1,4 +1,4 @@
-package com.softserve.edu05.pt.Task3;
+package com.softserve.edu15.edu05.pt.Task3;
 
 import java.util.Random;
 
