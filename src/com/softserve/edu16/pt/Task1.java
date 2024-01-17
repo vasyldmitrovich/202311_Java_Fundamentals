@@ -17,7 +17,7 @@ public class Task1 {
             System.out.println("It exists");
             var lines = Files.lines(file).toArray(String[]::new);
             System.out.println(Arrays.stream(lines).count());
-            Arrays.stream(lines).map(l -> l.length()).forEach(System.out::println);
+            Arrays.stream(lines).map(String::length).forEach(System.out::println);
             Arrays.stream(lines)
                     .filter(line -> !line.isEmpty())
                     .max(Comparator.comparing(String::length))
