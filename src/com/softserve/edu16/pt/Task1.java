@@ -10,7 +10,8 @@ import java.util.Comparator;
 public class Task1 {
     public static void main(String[] args) throws IOException {
 
-        String filename = "D:\\Java SoftServe\\myText.txt";
+//        String filename = "D:\\Java SoftServe\\myText.txt";
+        String filename = "./src/myText.txt";
         var file = Path.of(filename);
 
         if (Files.exists(file)) {
