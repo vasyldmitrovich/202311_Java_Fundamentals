@@ -1,0 +1,30 @@
+My name is Max, I am 22 years old. Nice to meet you!
+I was born in Moldova, by nationality - Bulgarian. After I turned 18, I decided to move to Bulgaria
+to work and study independently of my parents.
+I started from scratch, as an assistant cook. Also, I've always been interested in technology,
+which has served me very well.
+At the time of the COVID pandemic, when there was no work at all, I developed exactly in this field of activity -
+I was engaged in repairing phones, laptops and computers.
+It was with this that I was able to pay for my accommodation and have money for food.
+After the fall of the restrictive measures to the establishments,
+I am again returning to the industry, where I already have good success.
+I would like to connect my life with information technology, which I am taking steps towards.
+Now I have finally made up my mind and headed to a university where
+I will study by correspondence so that I can also work.
+I am moving towards my goal - to become an IT specialist and I am not giving up!
+
+Education.
+Cybersecurity Informational Technologies
+Military Academy ''G.S. Rakovski" - Sofia
+When choosing a higher education, I focused on prestige and quality, so I chose Georgi Rakovski Military Academy.
+During the training process, we consider the fundamental problems of security
+in cyberspace, and we also have many accreditations in this area.
+We also do not depart from the natural sciences, such as physics and mathematics, and also focus on programming in C++.
+2019
+Programming & QA Technologies Informational Technologies CEITI - Chisinau, Moldova
+After elementary school, I entered here in the 10th grade. Since this is a college, I had the opportunity
+to get a secondary education along with a profession.
+The idea was wonderful, given my interest in technology.
+But at one point, on my 18th birthday, I decide that I no longer want to depend on my parents
+and leave for Bulgaria (since this is my historical homeland) in order to be self-sufficient.
+Here I acquired skills in languages such as C++, Java, SQL, markup languages (HTML, CSS)

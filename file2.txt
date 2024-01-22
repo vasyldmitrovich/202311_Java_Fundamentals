@@ -1,0 +1,5 @@
+text1.txt lines count = 30
+The longest line : 
+We also do not depart from the natural sciences, such as physics and mathematics, and also focus on programming in C++.
+Name: Maxim Cazanli
+Date of birth: 16.03.2001
