@@ -26,7 +26,7 @@ public class App {
         Arrays.stream(lines)
                 .min(Comparator.comparingInt(String::length))
                 .ifPresent(System.out::println);
-        System.out.println("Lines with \"var\"");
+        System.out.println("Lines, which consist of word \"var\"");
         Arrays.stream(lines)
                 .filter(line -> line.contains("var"))
                 .forEach(System.out::println);
