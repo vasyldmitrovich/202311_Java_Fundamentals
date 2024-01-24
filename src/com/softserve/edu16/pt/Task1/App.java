@@ -8,7 +8,6 @@ import java.util.Comparator;
 
 public class App {
     public static void main(String[] args) throws IOException {
-
         var fileName = "mytext.txt";
         var file = Path.of(fileName);
         var lines = Files.lines(file).toArray(String[]::new);
