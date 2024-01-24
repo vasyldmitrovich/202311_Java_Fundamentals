@@ -8,6 +8,7 @@ import java.util.Arrays;
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class App {
+
     public static void main(String[] args)throws IOException {
 
         var sourceFileName = "hw2Source.java";

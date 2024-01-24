@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class App {
+
     public static void main(String[] args) throws IOException {
 
         var file1Name = "file1.txt";
