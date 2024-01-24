@@ -9,6 +9,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
 public class App {
+
     public static void main(String[] args) throws IOException {
 
         var fileName = "mytext.txt";
