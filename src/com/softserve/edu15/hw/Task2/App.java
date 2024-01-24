@@ -6,6 +6,7 @@ public class App {
         Object firstKey = new Object();
         Object secondKey = new Object();
 
+
         Thread t1 = new Thread(()->{
             synchronized (firstKey){
                 try {
