@@ -2,7 +2,6 @@ package com.softserve.edu15.hw.Task3;
 
 public class App {
     public static void main(String[] args) {
-
         Thread one = new Thread(()->{
 
             Thread two = new Thread(()->{
