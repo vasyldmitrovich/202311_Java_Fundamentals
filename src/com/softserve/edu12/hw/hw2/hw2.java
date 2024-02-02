@@ -19,7 +19,7 @@ public class hw2 {
     }
 
     static int readNumber(int start, int end) {
-        int x=0;
+        int x = 0;
         try {
             System.out.println("Enter integer number (" + start + ", " + end + "):");
             x = SCANNER.nextInt();
