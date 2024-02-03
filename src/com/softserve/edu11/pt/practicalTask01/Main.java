@@ -1,4 +1,4 @@
-package com.softserve.edu11.pt;
+package com.softserve.edu11.pt.practicalTask01;
 
 import java.util.regex.Pattern;
 
