@@ -1,4 +1,4 @@
-package com.softserve.edu10.practicalTask2;
+package com.softserve.edu10.pt.practicalTask2;
 
 import java.time.LocalDate;
 import java.util.*;
