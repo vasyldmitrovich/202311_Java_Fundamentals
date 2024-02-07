@@ -1,0 +1,6 @@
+Name: Oleh
+Surname: Sorokotiaha
+Birthday date: 29/09/1982
+birthplace : Kharkiv
+place of residence :Truskavets
+
