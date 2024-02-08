@@ -7,14 +7,13 @@ import java.nio.file.Paths;
 
 public class Main {
     public static void main(String[] args) {
-        Path sourceFilePath = Paths.get("sourceFile.java");
-        Path destinationFilePath = Paths.get("destinationFile.java");
+        Path file1 = Paths.get("file1.java");
+        Path file2 = Paths.get("file2.java");
 
         try {
-            String content = new String(Files.readAllBytes(sourceFilePath));
+            String content = new String(Files.readAllBytes(file1));
             String modifiedContent = content.replaceAll("\\bpublic\\b", "private");
-
-            Files.write(destinationFilePath, modifiedContent.getBytes());
+            Files.write(file2, modifiedContent.getBytes());
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
