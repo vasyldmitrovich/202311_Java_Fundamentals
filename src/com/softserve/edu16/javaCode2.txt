@@ -1,0 +1,15 @@
+Private class pt2 {
+    private static final Scanner SCANNER = new Scanner(System.in);
+
+    Private static void main(String[] args) {
+        var sc = SCANNER.useDelimiter(",");
+        List<String> data = new ArrayList<>();
+        while (sc.hasNext()) {
+            String el = sc.nextLine();
+            if (!data.contains(el)) {
+                data.add(el);
+            }
+        }
+        System.out.println(data);
+
+    }
