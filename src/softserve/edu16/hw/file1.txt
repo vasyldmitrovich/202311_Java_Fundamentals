@@ -1,0 +1,4 @@
+This is a sample text file.
+It contains multiple lines of text.
+Each line will be read and processed by the Java program.
+We will count the number of lines and find the longest line.
